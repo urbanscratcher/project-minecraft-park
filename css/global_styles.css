@@ -1,256 +1,427 @@
-/*Common CSS-------------------------------------*/
+/* Global ------------------------------------- */
 * {
   box-sizing: border-box;
 }
 
-body {
-  background: lightgrey;
-  height: 100%;
+html {
+  /* 62.5% of 16px browser font size is 10px, meaning that 1rem = 10px  */
+  font-size: 62.5%;
 }
 
+/* Reset ------------------------------------- */
+/* initialize semantic tags by removing default styles */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Font Families ------------------------------------- */
+/* - for headline */
+/* Luckiest Guy is selected to show playful chracteristics of the website */
+h1,
+h2 {
+  font-family: "Luckiest Guy", "Nunito Sans", system-ui, sans-serif;
+}
+
+/* - for normal text */
+/* - Nunito Sans is selected to enhance readability to convey useful information */
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  font-family: "Nunito Sans", system-ui, sans-serif;
+}
+
+/* Font Size & Color ------------------------------------- */
+/* - Font Size Rule */
+/* For visual hierarchy, perfect fifth is applied to type scale */
+/* 
+  -- 3xl : 9.044rem
+  -- 2xl : 6.396rem
+  -- xl : 4.523rem
+  -- l : 3.199rem
+  -- m : 2.262rem
+  -- s : 1.6rem
+  -- xs : 1.132rem
+  -- 2xs : 0.8rem
+*/
+
+/* - Font Color Rule */
+/*
+ -- The biggest heading, highlights, call-to-action : strong color like orangered
+ -- Normal headings : playful and attractive color like blueviolet
+ -- Alert on the top : yellow color for alarming
+ -- Header on the top : blue-ish color like turquoise to mimic the sky of Minecraft
+ -- Footer on the bottom : earthy color like brown or warm grey to mimic the land of Minecraft
+ -- 5 level Greyscale system : #F9F8F7 #ECE9E8 #C0B6B1 #736D6A #262423
+ -- Using pure black should be avoided for reading comfortability -> use #262423
+ */
+
 h1 {
-  font-family: monospace, system-ui, sans-serif;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: bold;
-  font-size: 25px;
-  color: white;
+  font-size: 9rem;
+  color: orangered;
 }
 
 h2 {
-  font-family: monospace, system-ui, sans-serif;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: bold;
-  font-size: 20px;
-  color: darkblue;
+  font-size: 6.4rem;
+  color: blueviolet;
 }
 
 h3 {
-  font-family: monospace, system-ui, sans-serif;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: bold;
-  font-size: 17px;
-  color: black;
+  font-size: 4.5rem;
+  color: #262423;
 }
 
-p {
+h4 {
+  font-size: 3.2rem;
+  color: #262423;
+}
+
+a,
+p,
+option,
+label,
+input {
+  font-size: 2.3rem;
+  color: #262423;
+  line-height: 1.4;
+}
+
+/* Header ------------------------------------- */
+#alert {
+  background: gold;
+  padding: 0.5rem 7.9rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-bottom: 0.1rem solid #262423;
+}
+
+#alert p {
+  color: #262423;
+}
+
+#alert p,
+#alert a {
+  font-size: 1.6rem;
+}
+
+#alert a:link,
+#alert a:visited {
+  color: #262423;
+  border: 0.1rem solid #262423;
+}
+
+#alert a:link,
+#alert a:visited {
+  padding: 0.7rem 2.1rem;
+  border-radius: 1rem;
+  color: #262423;
+  background-color: coral;
+  font-weight: bold;
+  transition: all 0.1s;
+}
+
+#alert a:hover {
+  background-color: orangered;
+  box-shadow: 0.2rem 0.2rem 0 0.2rem black;
+}
+
+/* Main NavBar ------------------------------------- */
+#mainNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 15.8rem;
+  border-bottom: 0.1rem solid #262423;
+}
+
+#mainNav > a {
+  display: flex;
+}
+
+#mainNav ol {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+#mainNav ol li a:link,
+#mainNav ol li a:visited {
+  color: #262423;
+}
+
+#mainNav ol li a:hover,
+#mainNav ol li a:active {
+  color: orangered;
+}
+
+/* Footer ------------------------------------------- */
+footer {
+  background: #666;
+  text-align: center;
+  width: 100%;
+  height: 70px;
+  padding: 1px;
+  grid-area: footer;
+}
+
+#sitemap {
+  background: #666;
+  text-align: center;
+  padding: 2px;
+}
+
+#sitemap ol {
+  border: 2px solid white;
+  border-width: 1px 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+#sitemap li {
+  display: inline;
+  padding: 2px;
+}
+
+#sitemap li a {
   font-family: monospace, system-ui, sans-serif;
   font-style: normal;
+  text-decoration: none;
   font-variant: normal;
   font-weight: normal;
-  font-size: 15px;
+  font-size: 0.7em;
+  color: white;
+  display: inline-block;
+  padding: 5px;
+}
+
+#contactUs {
+  background: grey;
+  text-align: center;
+  padding: 1px;
+  grid-area: contact;
+}
+
+#contactPhone #callCenterInfo li {
+  font-family: monospace, system-ui, sans-serif;
+  font-style: normal;
+  text-decoration: none;
+  font-variant: normal;
+  font-weight: normal;
+  font-size: 0.7em;
+  color: white;
+  display: flex;
+  padding: 5px;
+}
+
+#contactPhone #callCenterInfo #callcentre {
+  font-style: normal;
+  text-decoration: normal;
+  font-variant: normal;
+  font-weight: bold;
+  font-size: 0.8em;
   color: white;
 }
 
-/*Header CSS---------------------------------------*/
-header { grid-area: header; }
-
-header{
-    background:slategrey;
-    text-align: center;
-    width:100%;
-    height:70px;
-    padding: 1px;  
+#contactPhone #callCenterInfo #phone {
+  font-style: normal;
+  text-decoration: underline;
+  font-variant: normal;
+  font-weight: normal;
+  font-size: 0.6em;
+  color: white;
 }
 
-
-/*Nav CSS-------------------------------------------*/
-
-nav { grid-area: nav; }
-
-nav{
-    background:gray;
-    text-align:center;
-    width: 100%;
+#contactEmail li {
+  font-family: monospace, system-ui, sans-serif;
+  font-style: normal;
+  text-decoration: none;
+  font-variant: normal;
+  font-weight: normal;
+  font-size: 0.7em;
+  color: white;
+  display: flex;
+  padding: 5px;
 }
 
-nav ol{
-    border:1px solid white;
-    border-width:1px 0;
-    list-style:none;
-    margin:0;
-    padding:0;
-    text-align:center;
+#contactEmail #support {
+  font-weight: bold;
+  font-size: 0.8em;
 }
 
-nav li{
-    display:inline;
-    padding: 2px;
+#contactEmail #email {
+  font-style: italic;
+  text-decoration: underline;
+  font-weight: normal;
+  font-size: 0.6em;
+  color: blue;
 }
 
-nav li a {
-    font-family: monospace, system-ui, sans-serif;
-    font-style: normal;
-    text-decoration: : none;
-    font-variant: normal;
-    font-weight: normal;
-    font-size:0.7em;
-    color: white;
-    display: inline-block;
-    padding: 5px;
+footer #newsletter {
+  background: grey;
+  font-family: monospace, system-ui, sans-serif;
+  font-style: normal;
+  text-decoration: none;
+  font-variant: normal;
+  font-weight: normal;
+  font-size: 0.6em;
+  color: white;
+  padding: 5px;
+  grid-area: news;
 }
 
-
-/*Footer CSS-------------------------------------------*/
-
-footer { grid-area: footer; }
-#contactUs { grid-area: contact; }
-#newsletter { grid-area: news; }
-#followUs { grid-area: followus; }
-
-
-.grid-container-footer {
-    display: grid;
-    grid-template-columns: auto auto auto auto auto auto auto;
-    grid-template-areas:
-    'header header header header header header'
-    'nav nav nav nav nav nav'
-    'main main main main main main'
-    'footer footer footer footer footer footer'
-    'contact contact news news followus followus';
+footer #newsletter #newsletterForm {
+  color: green;
 }
 
-
-footer
-{
-    background:#666;
-    text-align: center;
-    width:100%;
-    height:70px;
-    padding: 1px;  
+footer #newsletter #newsletterPolicy {
+  font-size: 0.6em;
 }
 
-footer #sitemap{
-    background: #666;
-    text-align: center;
-    padding: 2px;  
+footer #followUs {
+  background: grey;
+  font-family: monospace, system-ui, sans-serif;
+  font-style: normal;
+  text-decoration: none;
+  font-variant: normal;
+  font-weight: normal;
+  font-size: 0.6em;
+  color: white;
+  padding: 0px;
+  grid-area: followus;
 }
 
-footer #sitemap ol{
-    border:2px solid white;
-    border-width:1px 0;
-    list-style:none;
-    margin:0;
-    padding:0;
-    text-align:center;
-}
-
-footer #sitemap li{
-    display:inline;
-    padding: 2px;
-}
-
-footer #sitemap li a {
-    font-family: monospace, system-ui, sans-serif;
-    font-style: normal;
-    text-decoration: : none;
-    font-variant: normal;
-    font-weight: normal;
-    font-size:0.7em;
-    color: white;
-    display: inline-block;
-    padding: 5px;
-}
-
-footer #contactUs{
-    background: grey;
-    text-align: center;
-    padding: 1px;  
-}
-
-
-footer #contactPhone #callCenterInfo li{
-    font-family: monospace, system-ui, sans-serif;
-    font-style: normal;
-    text-decoration: none;
-    font-variant: normal;
-    font-weight: normal;
-    font-size:0.7em;
-    color: white;
-    display: flex;
-    padding: 5px;
-}
-
-footer #contactPhone #callCenterInfo #callcentre{
-    font-style: normal;
-    text-decoration:normal;
-    font-variant: normal;
-    font-weight: bold;
-    font-size:0.8em;
-    color: white;
-}
-
-footer #contactPhone #callCenterInfo #phone{
-    font-style: normal;
-    text-decoration:underline;
-    font-variant: normal;
-    font-weight: normal;
-    font-size:0.6em;
-    color: white;
-}
-
-footer #contactEmail li{
-    font-family: monospace, system-ui, sans-serif;
-    font-style: normal;
-    text-decoration: none;
-    font-variant: normal;
-    font-weight: normal;
-    font-size:0.7em;
-    color: white;
-    display: flex;
-    padding: 5px;
-}
-
-footer #contactEmail #support{
-    font-weight: bold;
-    font-size:0.8em;
-}
-
-footer #contactEmail #email{
-    font-style: italic;
-    text-decoration:underline;
-    font-weight: normal;
-    font-size:0.6em;
-    color: blue;
-}
-
-footer #newsletter{
-    background: grey;
-    font-family: monospace, system-ui, sans-serif;
-    font-style: normal;
-    text-decoration: none;
-    font-variant: normal;
-    font-weight: normal;
-    font-size:0.6em;
-    color: white;
-    padding: 5px;
-}
-
-
-footer #newsletter #newsletterForm{
-    color:green;
-}
-
-footer #newsletter #newsletterPolicy{
-    font-size:0.6em;
-}
-
-footer #followUs{
-    background: grey;
-    font-family: monospace, system-ui, sans-serif;
-    font-style: normal;
-    text-decoration: none;
-    font-variant: normal;
-    font-weight: normal;
-    font-size:0.6em;
-    color: white;
-    padding: 0px;
-}
-
-footer #followUs li{
-    display: inline;
-    padding: 15px;
-
+footer #followUs li {
+  display: inline;
+  padding: 15px;
 }

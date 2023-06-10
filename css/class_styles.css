@@ -1,4 +1,91 @@
-/*moreInfo.html ------------------------------------*/
+/* Util --------------------------------------- */
+.gray-1 {
+  color: #f9f8f7;
+}
+
+.gray-2 {
+color:#ece9e8
+}
+
+.gray-3 {
+  color:#c0b6b1
+}
+
+.gray-4 {
+  color:#736d6a
+}
+
+.gray-5 {
+  color:#262423
+}
+
+.orangered {
+  color:orangered
+}
+
+.blueviolet {
+  color:blueviolet;
+}
+
+.font-3xl {
+  font-size: 9.044rem;
+}
+
+.font-2xl {
+  font-size: 6.396rem;
+}
+
+.font-xl {
+  font-size: 4.523rem;
+}
+
+.font-l {
+  font-size: 3.199rem;
+}
+
+.font-m {
+  font-size: 2.262rem;
+}
+
+.font-s {
+  font-size: 1.6rem;
+}
+
+.font-xs {
+  font-size: 1.132rem;
+}
+
+.font-2xs {
+  font-size: 0.8rem;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.letter-spacing-10 {
+  letter-spacing: -0.1rem;
+}
+
+.letter-spacing-15 {
+  letter-spacing: -0.15rem;
+}
+
+.letter-spacing-20 {
+  letter-spacing: -0.2rem;
+}
+
+
+
+/* index.html ------------------------------------ */
+
+
+
+
+
+
+
+/* moreInfo.html ------------------------------------ */
 
 .ticketOption {
   background: wheat;
@@ -159,4 +246,17 @@
   .ticketOption{
       width: 100%;
   }
+}
+
+
+/* Footer ---------------------- */
+.grid-container-footer {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto;
+  grid-template-areas:
+  'header header header header header header'
+  'nav nav nav nav nav nav'
+  'main main main main main main'
+  'footer footer footer footer footer footer'
+  'contact contact news news followus followus';
 }

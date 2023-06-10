@@ -1,7 +1,19 @@
 /* index.html ------------------------------------*/
+#cover {
+  background-image: url('../img/index/cover.avif');
+  background-repeat:no-repeat;
+  background-size: 100vw;
+  height: 90vh;
+  background-blend-mode: darken();
+
+  display: flex;
+  flex-direction: column;
+}
+
+
+
 /* detail.html ------------------------------------*/
 /* moreInfo.html ------------------------------------*/
-
 #ticketOptions {
   grid-area: ticketoptions;
 }
@@ -42,4 +54,3 @@
     width: 100%;
     padding: 200px;
 }
-

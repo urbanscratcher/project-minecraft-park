@@ -11,16 +11,21 @@
     <link rel="stylesheet" href="./css/id_styles.css" />
   </head>
   <body>
+    <!-- <div class = "grid-container-index"> -->
+    <!-- Joun: the class is removed since it seems not functional -->
     <!-- HEADER: all pages include this section (always on top) -->
     <header>
       <!-- ALERT BAR -->
       <div id="alert">
         <p>Opening Hours Today &mdash; from 09:00AM to 11:00PM</p>
-        <a href="./index.html#ticketing"> Get Tickets Now</a>
+        <a href="./index.html#ticketing">GET TICKETS NOW!</a>
       </div>
+
       <!-- MAIN NAVIGATION BAR -->
       <nav id="mainNav">
         <!-- logo -->
+        <!-- <nav id="navLogo"> -->
+        <!-- Joun: I believe nav should represent a section of a page to provide nav links, not for part -->
         <a href="index.html">
           <img
             src="./img/common/logo.png"
@@ -28,8 +33,12 @@
             width="200"
           />
         </a>
+        <!-- </nav> -->
+
         <!-- menu items -->
-        <ol>
+        <!-- <nav id="navMenu"> -->
+        <!-- Joun: again, the nav tag should include entire nav bar area. the id is moved to ol -->
+        <ol id="navMenu">
           <li><a href="./detail.html#attractions">Attractions</a></li>
           <li><a href="./detail.html#events">Events</a></li>
           <li>
@@ -41,10 +50,11 @@
           <li><a href="./moreInfo.html#faqs">FAQs</a></li>
         </ol>
       </nav>
-      <hr />
+      <!-- </nav> -->
     </header>
 
     <!-- MAIN: main content for this page -->
+
     <main>
       <!-- TICKET OPTIONS SECTION -->
       <section id="ticketOptions">
@@ -52,6 +62,7 @@
         <div class="sectionHead">
           <h2>Ticket Options</h2>
         </div>
+
         <!-- option1 -->
         <div class="ticketOption">
           <h3>Day Pass</h3>
@@ -60,12 +71,13 @@
               Unlimited Access to All Attractions and Special Events for 1-day
             </li>
           </ul>
-          <p class="ticketPrice">
+          <div class="ticketPrice">
             starting From
             <strong>$59</strong>
             <small>per person before taxes & fees</small>
-          </p>
+          </div>
         </div>
+
         <!-- option2 -->
         <div class="ticketOption">
           <h3>Annual Pass</h3>
@@ -75,12 +87,13 @@
             </li>
             <li>FREE Parking</li>
           </ul>
-          <p class="ticketPrice">
+          <div class="ticketPrice">
             starting From
             <strong>$9.99</strong>
             <small>per month before taxes & fees</small>
-          </p>
+          </div>
         </div>
+
         <!-- option3 -->
         <div class="ticketOption">
           <h3>Diamond Pass</h3>
@@ -91,13 +104,15 @@
             <li>FREE Lunch at VIP Lounge</li>
             <li>Fast Entrance</li>
           </ul>
-          <p class="ticketPrice">
+          <div class="ticketPrice">
             starting From
             <strong>$119</strong>
             <small>per person before taxes & fees</small>
-          </p>
+          </div>
         </div>
       </section>
+
+      <hr />
 
       <!-- MAP SECTION -->
       <section id="map">
@@ -106,7 +121,7 @@
           <h2>Park Map</h2>
         </div>
         <!-- large map image -->
-        <img src="./img/moreInfo/map.webp" alt="more info img" width="640" />
+        <img src="./img/moreInfo/map.webp" alt="more info img" width="100%" />
       </section>
 
       <!-- ACCESSIBILITY INFORMATION SECTION-->
@@ -234,24 +249,28 @@
         <!-- support4 -->
         <div class="accSupport">
           <h3>Accessible Parking and Restrooms</h3>
-          <ul>
-            <li>
-              Accessible parking spaces are available near the entrance of the
-              park, providing convenient access for visitors with mobility
-              challenges. These designated spaces are located in close proximity
-              to the park entrance, allowing for easier navigation.
-            </li>
-            <li>
-              Accessible restroom facilities equipped with spacious stalls and
-              grab bars are conveniently located throughout the park. These
-              facilities are designed to accommodate the needs of individuals
-              with disabilities, ensuring comfort and convenience.
-            </li>
-          </ul>
+          <div class="parkinglist">
+            <ul>
+              <li>
+                Accessible parking spaces are available near the entrance of the
+                park, providing convenient access for visitors with mobility
+                challenges. These designated spaces are located in close
+                proximity to the park entrance, allowing for easier navigation.
+              </li>
+              <br />
+              <li>
+                Accessible restroom facilities equipped with spacious stalls and
+                grab bars are conveniently located throughout the park. These
+                facilities are designed to accommodate the needs of individuals
+                with disabilities, ensuring comfort and convenience.
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
 
       <!-- FAQs SECTION -->
+
       <section id="faqs">
         <!-- head -->
         <div class="sectionHead">
@@ -347,108 +366,115 @@
       </div>
 
       <!-- Contact Us -->
-      <div id="contactUs">
-        <h3>Contact Us</h3>
-        <!-- via phone -->
-        <div id="contactPhone">
-          <h4>Call Center</h4>
-          <ul id="callCenterInfo">
-            <li><strong>055 465 4557</strong></li>
-            <li><b>Mon to Fri</b> &mdash; 9AM to 6PM CST</li>
-            <li><b>Sat</b> &mdash; 9AM to 5PM CST</li>
-            <li><b>Sun</b> &mdash; 9AM to 4PM CST</li>
+      <div class="grid-container-footer">
+        <div id="contactUs">
+          <h3>Contact Us</h3>
+          <!-- via phone -->
+          <div id="contactPhone">
+            <ul id="callCenterInfo">
+              <li id="callcentre">Call Centre:</li>
+              <li id="phone">055 465 4557</li>
+              <li id="weekdayofficehour">
+                <b>Mon to Fri</b> &mdash; 9AM to 6PM CST
+              </li>
+              <li id="satofficehour"><b>Sat</b> &mdash; 9AM to 5PM CST</li>
+              <li id="sunofficehour"><b>Sun</b> &mdash; 9AM to 4PM CST</li>
+            </ul>
+          </div>
+
+          <!-- via email -->
+          <div id="contactEmail">
+            <ul>
+              <li id="support">24/7 Support:</li>
+              <li id="email">
+                <strong>support@minecraft-adventure.com</strong>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Newsletter -->
+        <div id="newsletter">
+          <h3>Newsletter</h3>
+          <p>Don't miss our good deals and latest news!</p>
+          <!-- subscription form -->
+          <form id="newsletterForm">
+            <input type="email" placeholder="Email address" />
+            <a role="button" href="./subscribed.html">Subscribe</a>
+          </form>
+          <!-- policy description -->
+          <p id="newsletterPolicy">
+            <small>
+              To find out more about how Minecraft Park uses and protects your
+              personal data, click <a href="#">here</a>. You can unsubscribe
+              free of charge and at any time.
+            </small>
+          </p>
+        </div>
+
+        <!-- Follow Us -->
+        <div id="followUs">
+          <h3>Follow Us</h3>
+          <!-- social network links -->
+          <ul id="socialNetworkLinks">
+            <li id="twitter">
+              <a href="#"
+                ><svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 192 192"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                >
+                  <path
+                    stroke="#000000"
+                    stroke-linejoin="round"
+                    stroke-width="12"
+                    d="M126 38c-14.359 0-26 11.64-26 26a25.89 25.89 0 0 0 2.929 12C72 76 56 70 30 46c0 39.5 10 66 34 81-8 11.2-29.333 14.333-42 14.5 0 0 14 13.5 46 13.5 56 0 84-46.783 84-91l18-20h-27.386A25.892 25.892 0 0 0 126 38Z"
+                  /></svg
+              ></a>
+            </li>
+            <li id="facebook">
+              <a href="#">
+                <svg
+                  fill="#000000"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 2.03998C6.5 2.03998 2 6.52998 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.84998C10.44 7.33998 11.93 5.95998 14.22 5.95998C15.31 5.95998 16.45 6.14998 16.45 6.14998V8.61998H15.19C13.95 8.61998 13.56 9.38998 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96C15.9164 21.5878 18.0622 20.3855 19.6099 18.57C21.1576 16.7546 22.0054 14.4456 22 12.06C22 6.52998 17.5 2.03998 12 2.03998Z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li id="instagram">
+              <a href="#"
+                ><svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 192 192"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                >
+                  <path
+                    stroke="#000000"
+                    stroke-width="12"
+                    d="M96 162c-14.152 0-24.336-.007-32.276-.777-7.849-.761-12.87-2.223-16.877-4.741a36 36 0 0 1-11.33-11.329c-2.517-4.007-3.98-9.028-4.74-16.877C30.007 120.336 30 110.152 30 96c0-14.152.007-24.336.777-32.276.76-7.849 2.223-12.87 4.74-16.877a36 36 0 0 1 11.33-11.33c4.007-2.517 9.028-3.98 16.877-4.74C71.663 30.007 81.847 30 96 30c14.152 0 24.336.007 32.276.777 7.849.76 12.87 2.223 16.877 4.74a36 36 0 0 1 11.329 11.33c2.518 4.007 3.98 9.028 4.741 16.877.77 7.94.777 18.124.777 32.276 0 14.152-.007 24.336-.777 32.276-.761 7.849-2.223 12.87-4.741 16.877a36 36 0 0 1-11.329 11.329c-4.007 2.518-9.028 3.98-16.877 4.741-7.94.77-18.124.777-32.276.777Z"
+                  />
+                  <circle
+                    cx="96"
+                    cy="96"
+                    r="30"
+                    stroke="#000000"
+                    stroke-width="12"
+                  />
+                  <circle cx="135" cy="57" r="9" fill="#000000" /></svg
+              ></a>
+            </li>
           </ul>
         </div>
-        <!-- via email -->
-        <div id="contactEmail">
-          <h4>24/7 Support</h4>
-          <ul id="emailInfo">
-            <li><strong>support@minecraft-adventure.com</strong></li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Newsletter -->
-      <div id="newsletter">
-        <h3>Newsletter</h3>
-        <p>Don't miss our good deals and latest news!</p>
-        <!-- subscription form -->
-        <form id="newsletterForm">
-          <input type="email" placeholder="Email address" />
-          <a role="button" href="./subscribed.html">Subscribe</a>
-        </form>
-        <!-- policy description -->
-        <p id="newsletterPolicy">
-          <small>
-            To find out more about how Minecraft Park uses and protects your
-            personal data, click <a href="#">here</a>. You can unsubscribe free
-            of charge and at any time.
-          </small>
-        </p>
-      </div>
-
-      <!-- Follow Us -->
-      <div id="followUs">
-        <h3>Follow Us</h3>
-        <!-- social network links -->
-        <ul id="socialNetworkLinks">
-          <li id="twitter">
-            <a href="#"
-              ><svg
-                width="24"
-                height="24"
-                viewBox="0 0 192 192"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-              >
-                <path
-                  stroke="#000000"
-                  stroke-linejoin="round"
-                  stroke-width="12"
-                  d="M126 38c-14.359 0-26 11.64-26 26a25.89 25.89 0 0 0 2.929 12C72 76 56 70 30 46c0 39.5 10 66 34 81-8 11.2-29.333 14.333-42 14.5 0 0 14 13.5 46 13.5 56 0 84-46.783 84-91l18-20h-27.386A25.892 25.892 0 0 0 126 38Z"
-                /></svg
-            ></a>
-          </li>
-          <li id="facebook">
-            <a href="#">
-              <svg
-                fill="#000000"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M12 2.03998C6.5 2.03998 2 6.52998 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.84998C10.44 7.33998 11.93 5.95998 14.22 5.95998C15.31 5.95998 16.45 6.14998 16.45 6.14998V8.61998H15.19C13.95 8.61998 13.56 9.38998 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96C15.9164 21.5878 18.0622 20.3855 19.6099 18.57C21.1576 16.7546 22.0054 14.4456 22 12.06C22 6.52998 17.5 2.03998 12 2.03998Z"
-                />
-              </svg>
-            </a>
-          </li>
-          <li id="instagram">
-            <a href="#"
-              ><svg
-                width="24"
-                height="24"
-                viewBox="0 0 192 192"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-              >
-                <path
-                  stroke="#000000"
-                  stroke-width="12"
-                  d="M96 162c-14.152 0-24.336-.007-32.276-.777-7.849-.761-12.87-2.223-16.877-4.741a36 36 0 0 1-11.33-11.329c-2.517-4.007-3.98-9.028-4.74-16.877C30.007 120.336 30 110.152 30 96c0-14.152.007-24.336.777-32.276.76-7.849 2.223-12.87 4.74-16.877a36 36 0 0 1 11.33-11.33c4.007-2.517 9.028-3.98 16.877-4.74C71.663 30.007 81.847 30 96 30c14.152 0 24.336.007 32.276.777 7.849.76 12.87 2.223 16.877 4.74a36 36 0 0 1 11.329 11.33c2.518 4.007 3.98 9.028 4.741 16.877.77 7.94.777 18.124.777 32.276 0 14.152-.007 24.336-.777 32.276-.761 7.849-2.223 12.87-4.741 16.877a36 36 0 0 1-11.329 11.329c-4.007 2.518-9.028 3.98-16.877 4.741-7.94.77-18.124.777-32.276.777Z"
-                />
-                <circle
-                  cx="96"
-                  cy="96"
-                  r="30"
-                  stroke="#000000"
-                  stroke-width="12"
-                />
-                <circle cx="135" cy="57" r="9" fill="#000000" /></svg
-            ></a>
-          </li>
-        </ul>
       </div>
     </footer>
   </body>
