@@ -1,0 +1,256 @@
+/*Common CSS-------------------------------------*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: lightgrey;
+  height: 100%;
+}
+
+h1 {
+  font-family: monospace, system-ui, sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  font-size: 25px;
+  color: white;
+}
+
+h2 {
+  font-family: monospace, system-ui, sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  font-size: 20px;
+  color: darkblue;
+}
+
+h3 {
+  font-family: monospace, system-ui, sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  font-size: 17px;
+  color: black;
+}
+
+p {
+  font-family: monospace, system-ui, sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  font-size: 15px;
+  color: white;
+}
+
+/*Header CSS---------------------------------------*/
+header { grid-area: header; }
+
+header{
+    background:slategrey;
+    text-align: center;
+    width:100%;
+    height:70px;
+    padding: 1px;  
+}
+
+
+/*Nav CSS-------------------------------------------*/
+
+nav { grid-area: nav; }
+
+nav{
+    background:gray;
+    text-align:center;
+    width: 100%;
+}
+
+nav ol{
+    border:1px solid white;
+    border-width:1px 0;
+    list-style:none;
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+
+nav li{
+    display:inline;
+    padding: 2px;
+}
+
+nav li a {
+    font-family: monospace, system-ui, sans-serif;
+    font-style: normal;
+    text-decoration: : none;
+    font-variant: normal;
+    font-weight: normal;
+    font-size:0.7em;
+    color: white;
+    display: inline-block;
+    padding: 5px;
+}
+
+
+/*Footer CSS-------------------------------------------*/
+
+footer { grid-area: footer; }
+#contactUs { grid-area: contact; }
+#newsletter { grid-area: news; }
+#followUs { grid-area: followus; }
+
+
+.grid-container-footer {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    grid-template-areas:
+    'header header header header header header'
+    'nav nav nav nav nav nav'
+    'main main main main main main'
+    'footer footer footer footer footer footer'
+    'contact contact news news followus followus';
+}
+
+
+footer
+{
+    background:#666;
+    text-align: center;
+    width:100%;
+    height:70px;
+    padding: 1px;  
+}
+
+footer #sitemap{
+    background: #666;
+    text-align: center;
+    padding: 2px;  
+}
+
+footer #sitemap ol{
+    border:2px solid white;
+    border-width:1px 0;
+    list-style:none;
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+
+footer #sitemap li{
+    display:inline;
+    padding: 2px;
+}
+
+footer #sitemap li a {
+    font-family: monospace, system-ui, sans-serif;
+    font-style: normal;
+    text-decoration: : none;
+    font-variant: normal;
+    font-weight: normal;
+    font-size:0.7em;
+    color: white;
+    display: inline-block;
+    padding: 5px;
+}
+
+footer #contactUs{
+    background: grey;
+    text-align: center;
+    padding: 1px;  
+}
+
+
+footer #contactPhone #callCenterInfo li{
+    font-family: monospace, system-ui, sans-serif;
+    font-style: normal;
+    text-decoration: none;
+    font-variant: normal;
+    font-weight: normal;
+    font-size:0.7em;
+    color: white;
+    display: flex;
+    padding: 5px;
+}
+
+footer #contactPhone #callCenterInfo #callcentre{
+    font-style: normal;
+    text-decoration:normal;
+    font-variant: normal;
+    font-weight: bold;
+    font-size:0.8em;
+    color: white;
+}
+
+footer #contactPhone #callCenterInfo #phone{
+    font-style: normal;
+    text-decoration:underline;
+    font-variant: normal;
+    font-weight: normal;
+    font-size:0.6em;
+    color: white;
+}
+
+footer #contactEmail li{
+    font-family: monospace, system-ui, sans-serif;
+    font-style: normal;
+    text-decoration: none;
+    font-variant: normal;
+    font-weight: normal;
+    font-size:0.7em;
+    color: white;
+    display: flex;
+    padding: 5px;
+}
+
+footer #contactEmail #support{
+    font-weight: bold;
+    font-size:0.8em;
+}
+
+footer #contactEmail #email{
+    font-style: italic;
+    text-decoration:underline;
+    font-weight: normal;
+    font-size:0.6em;
+    color: blue;
+}
+
+footer #newsletter{
+    background: grey;
+    font-family: monospace, system-ui, sans-serif;
+    font-style: normal;
+    text-decoration: none;
+    font-variant: normal;
+    font-weight: normal;
+    font-size:0.6em;
+    color: white;
+    padding: 5px;
+}
+
+
+footer #newsletter #newsletterForm{
+    color:green;
+}
+
+footer #newsletter #newsletterPolicy{
+    font-size:0.6em;
+}
+
+footer #followUs{
+    background: grey;
+    font-family: monospace, system-ui, sans-serif;
+    font-style: normal;
+    text-decoration: none;
+    font-variant: normal;
+    font-weight: normal;
+    font-size:0.6em;
+    color: white;
+    padding: 0px;
+}
+
+footer #followUs li{
+    display: inline;
+    padding: 15px;
+
+}

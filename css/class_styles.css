@@ -1,0 +1,162 @@
+/*moreInfo.html ------------------------------------*/
+
+.ticketOption {
+  background: wheat;
+  font-family: monospace, system-ui, sans-serif;
+  font-style: normal;
+  text-decoration: : none;
+  font-variant: normal;
+  font-weight: normal;
+  font-size:1em;
+  color: black;
+  display: inline-block;
+  padding: 2px;
+}
+
+.ticketOption{
+  display: grid;
+  border: 1px solid grey;
+  grid-template-rows: 50px;
+  float: left;
+  width: 33.33%;
+  padding: 20px;
+}
+
+.ticketOption ul{
+  height: 70px;
+}
+
+.ticketPrice{
+  width: 100%;
+  padding: 15px;
+  color: brown;
+}
+
+.sectionHead::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.accDescription{
+  font-family: monospace, system-ui, sans-serif;
+  font-style: normal;
+  text-align: left;
+  text-decoration: : none;
+  font-variant: normal;
+  font-weight: normal;
+  font-size:0.3em;
+  color: darkcyan;
+  display: inline-block;
+  padding: 2px;
+}
+
+.accOpeningHours{
+  font-family: monospace, system-ui, sans-serif;
+  font-style: normal;
+  text-decoration: none;
+  font-variant: normal;
+  font-weight: normal;
+  font-size:0.9em;
+  color: white;
+  padding: 1px;
+}
+
+.accContact{
+  font-style: normal;
+  text-decoration:underline;
+  font-variant: normal;
+  font-weight: normal;
+  font-size:0.6em;
+  color: white;  
+}
+
+.accDetails{
+  font-family: monospace, system-ui, sans-serif;
+  font-style: normal;
+  text-align: left;
+  text-decoration: : none;
+  font-variant: normal;
+  font-weight: normal;
+  font-size:0.3em;
+  color: darkblue;
+  display: inline-block;
+  padding: 2px;
+}
+.accDetails li p{
+  font-family: monospace, system-ui, sans-serif;
+  font-style: normal;
+  text-align: left;
+  text-decoration: : none;
+  font-variant: normal;
+  font-weight: normal;
+  font-size:0.3em;
+  color: deeppink;
+  display: flex;
+}
+
+.parkinglist ul{
+  font-family: monospace, system-ui, sans-serif;
+  font-style: normal;
+  text-align: left;
+  text-decoration: : none;
+  font-variant: normal;
+  font-weight: normal;
+  font-size:0.3em;
+  color: darkcyan;
+  display: inline-block;
+  padding: 10px;
+}
+
+.accSupport{
+  display: grid;
+  grid-template-rows: 60px;
+  float: left;
+  width: 25%;
+  padding: 20px;
+}
+
+
+
+.faqDescription{   
+  font-family: monospace, system-ui, sans-serif;
+  font-style: normal;
+  text-decoration: : none;
+  font-variant: normal;
+  font-weight: normal;
+  font-size:0.9em;
+  color: darkcyan;
+  width: 80%;
+  display: inline-block;
+  padding: 10px;
+}
+
+.faq{
+  text-align: left;
+  font-family: monospace, system-ui, sans-serif;
+  font-style: normal;
+  text-decoration: : none;
+  font-variant: normal;
+  font-weight: normal;
+  font-size:0.7em;
+  color: darkblue;
+  width: 50%;
+  display: inline-block;
+  padding: 3px;
+}
+
+
+
+
+@media screen and (max-width:600px){
+  .accSupport{
+      width: 100%;
+  }
+}
+
+@media screen and (max-width:600px){
+  .ticketOption{
+      width: 100%;
+  }
+}

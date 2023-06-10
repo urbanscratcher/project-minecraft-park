@@ -1,0 +1,45 @@
+/* index.html ------------------------------------*/
+/* detail.html ------------------------------------*/
+/* moreInfo.html ------------------------------------*/
+
+#ticketOptions {
+  grid-area: ticketoptions;
+}
+
+#ticketOptions {
+  text-align: center;
+  width: 100%;
+  color: white;
+}
+
+
+#ticketOptions li {
+  font-family: monospace, system-ui, sans-serif;
+  font-style: normal;
+  text-decoration: : none;
+  font-variant: normal;
+  font-weight: normal;
+  font-size:0.7em;
+  color: gray;
+  display: inline-block;
+  padding: 2px;
+}
+
+#map{
+  text-align:center;
+  width: 100%;
+}
+
+#accessibility{
+  text-align:center;
+  width: 100%;
+}
+
+
+#faqs
+{
+    text-align:center;
+    width: 100%;
+    padding: 200px;
+}
+
