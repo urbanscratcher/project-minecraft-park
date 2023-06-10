@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<!-- By May 29th, Making wireframes, building contents, and HTML draft done by Hyunjung Joun -->
+<!-- By May 29th, Part of making a prototype and reviewing done by Atsuya Inomata -->
+<!-- Any contribution will be added here -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minecraft Adventure Park</title>
+  </head>
+  <body>
+    <!-- HEADER: all pages include this section (always on top) -->
+    <header>
+      <!-- ALERT BAR -->
+      <div id="alert">
+        <p>Opening Hours Today &mdash; from 09:00AM to 11:00PM</p>
+        <a href="./index.html#ticketing"> Get Tickets Now</a>
+      </div>
+      <!-- MAIN NAVIGATION BAR -->
+      <nav id="mainNav">
+        <!-- logo -->
+        <a href="index.html">
+          <img
+            src="./img/common/logo.png"
+            alt="A logo image of Minecraft Adventure Park"
+            width="200"
+          />
+        </a>
+        <!-- menu items -->
+        <ol>
+          <li><a href="./detail.html#attractions">Attractions</a></li>
+          <li><a href="./detail.html#events">Events</a></li>
+          <li>
+            <a href="./detail.html#diningAndShopping">Dining & Shopping</a>
+          </li>
+          <li><a href="./moreInfo.html#ticketOptions">Ticket Options</a></li>
+          <li><a href="./moreInfo.html#map">Map</a></li>
+          <li><a href="./moreInfo.html#accessibility">Accessibility</a></li>
+          <li><a href="./moreInfo.html#faqs">FAQs</a></li>
+        </ol>
+      </nav>
+      <hr />
+    </header>
+
+    <!-- MAIN: main content for this page -->
+    <main>
+      <!-- COVER SECTION -->
+      <section id="cover">
+        <img
+          src="./img/index/cover.avif"
+          alt="an overview of minecraft adventure park"
+          width="480"
+        />
+        <h1>Enter The Blocky Wonderland: Minecraft Adventure Park</h1>
+        <p>
+          Step into a world where imagination knows no bounds and the
+          possibilities are endless. Unleash your inner adventurer and let your
+          creativity soar as you traverse the vast expanses of our themepark,
+          where the only limit is your imagination.
+        </p>
+      </section>
+
+      <!-- INTRO SECTION -->
+      <section id="intro">
+        <!-- head -->
+        <div class="sectionHead">
+          <h2>Minecraft Adventure Awaits You</h2>
+        </div>
+        <!-- external video -->
+        <iframe
+          title="an overview of minecraft adventure"
+          width="480"
+          height="270"
+          src="https://www.youtube.com/embed/MmB9b5njVbA"
+        >
+        </iframe>
+      </section>
+
+      <!-- FEATURED ATTRACTIONS SECTION -->
+      <section id="featured">
+        <!-- head -->
+        <div class="sectionHead">
+          <h2>Featured Attractions and Rides</h2>
+          <a href="./detail.html#attractions">All Attractions and Rides</a>
+        </div>
+        <!-- featured images -->
+        <ul id="featuredList">
+          <li class="attrImg">
+            <a href="./detail.html#attrCreeper">
+              <img
+                src="./img/detail/attrCreeper.jpg"
+                alt="a creeper roller coaster"
+                width="240"
+              />
+            </a>
+          </li>
+          <li class="attrImg">
+            <a href="./detail.html#attrRacer">
+              <img
+                src="./img/detail/attrRacer.jpg"
+                alt="three cars in the Redstone Racer track"
+                width="240"
+              />
+            </a>
+          </li>
+          <li class="attrImg">
+            <a href="./detail.html#attrEnderdragon">
+              <img
+                src="./img/detail/attrEnderdragon.jpg"
+                alt="people fighting with the Ender Dragon"
+                width="240"
+              />
+            </a>
+          </li>
+          <li class="attrImg">
+            <a href="./detail.html#attrLabyrinth">
+              <img
+                src="./img/detail/attrLabyrinth.jpg"
+                alt="an overview of the maze showing dark and scary mood"
+                width="240"
+              />
+            </a>
+          </li>
+          <li class="attrImg">
+            <a href="./detail.html#attrUnicorn">
+              <img
+                src="./img/detail/attrUnicorn.png"
+                alt="a unicorn and a man in the green field"
+                width="240"
+              />
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <!-- TICKETING SECTION -->
+      <section id="ticketing">
+        <!-- head -->
+        <div class="sectionHead">
+          <h2>Get Your Tickets</h2>
+          <a href="./moreInfo.html#ticketOptions">Ticket Options</a>
+        </div>
+        <!-- user input form -->
+        <form id="ticketForm">
+          <!-- ticket type form -->
+          <div id="ticketTypeSelectForm">
+            <label for="ticketTypeSelect">Choose a Ticket Option</label>
+            <select name="ticketTypeSelect" id="ticketTypeSelect" size="3">
+              <option value="dayPass">Day Pass</option>
+              <option value="annualPass">Annual Pass</option>
+              <option value="diamondPass">Diamond Pass</option>
+            </select>
+          </div>
+          <!-- numbers of admission by ages form -->
+          <div id="ticketAgeForm">
+            <label for="adultsNumber">Adults(12+)</label>
+            <input
+              type="number"
+              min="0"
+              id="adultsNumber"
+              name="adultsNumber"
+              placeholder="0"
+            />
+            <label for="childrenNumber">Children(4&mdash;11)</label>
+            <input
+              type="number"
+              min="0"
+              id="childrenNumber"
+              name="childrenNumber"
+              placeholder="0"
+            />
+            <label for="seniorNumber">Seniors(65+)</label>
+            <input
+              type="number"
+              min="0"
+              id="seniorNumber"
+              name="seniorNumber"
+              placeholder="0"
+            />
+          </div>
+          <!-- visit date form -->
+          <div id="ticketDateForm">
+            <label for="startDate">Start from</label>
+            <input type="date" id="startDate" name="startDate" />
+            <label for="endTo">End to</label>
+            <input type="date" id="endTo" name="endTo" />
+          </div>
+
+          <!-- accesibility option form -->
+          <div id="ticketNeedHelpForm">
+            <input
+              type="checkbox"
+              id="includeHandicapHelp"
+              name="includeHandicapHelp"
+            />
+            <label for="includeHandicapHelp"
+              >Include handicapped/accessibility help</label
+            >
+          </div>
+
+          <!-- submit button -->
+          <input type="submit" value="Get Tickets" />
+        </form>
+      </section>
+
+      <!-- LATEST EVENT -->
+      <section id="latestEvent">
+        <!-- head -->
+        <div class="sectionHead">
+          <h2>The Latest Upcoming Event</h2>
+          <a href="./detail.html#events">All Special Events</a>
+        </div>
+        <!-- latest event card -->
+        <div id="latestEventCard">
+          <img
+            src="./img/detail/evMining.png"
+            alt="the latest event img"
+            width="240"
+          />
+          <!-- info in detail -->
+          <div class="latestEvInfo">
+            <h3>Mining Madness</h3>
+            <!-- operation info -->
+            <div class="latestEvOperation">
+              <!-- opening hours -->
+              <p class="latestEvOpeningHours">
+                <object
+                  data="./img/common/time.svg"
+                  width="24"
+                  height="24"
+                ></object>
+                5/27 12:00PM to 02:00PM
+              </p>
+              <!-- location -->
+              <p class="latestEvLocation">
+                <object
+                  data="./img/common/location.svg"
+                  width="24"
+                  height="24"
+                ></object>
+                Mystic Mountain
+              </p>
+            </div>
+            <!-- description -->
+            <div class="latestEvDescription">
+              <p>
+                Become a virtual miner and embark on a quest to collect precious
+                resources hidden throughout the park.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- DINING AND SHOPPING SECTION -->
+      <section id="diningAndShopping">
+        <!-- head -->
+        <div class="sectionHead">
+          <h2>Dining and Shopping</h2>
+        </div>
+        <!-- introducing dining -->
+        <div id="diningIntro">
+          <h3>Taste a Special Culinary</h3>
+          <p>
+            Embark on a delectable culinary journey and let your taste buds
+            explore a world of flavors at Minecraft Themepark
+          </p>
+          <a href="./detail.html#dining">All Dining Options</a>
+        </div>
+        <!-- introducing shopping -->
+        <div id="shoppingIntro">
+          <h3>Shop Minecraft Inspired Items</h3>
+          <p>
+            With a myriad of shopping options to explore, prepare to find
+            treasures that capture the essence of Minecraft
+          </p>
+          <a href="./detail.html#shops">All Shopping Options</a>
+        </div>
+      </section>
+
+      <!-- MORE INFORMATION -->
+      <section id="moreInfo">
+        <!-- head -->
+        <div class="sectionHead">
+          <h2>More Information</h2>
+        </div>
+        <!-- more information -->
+        <ol id="moreInfoList">
+          <li>
+            <object
+              data="./img/common/ticket.svg"
+              width="24"
+              height="24"
+            ></object>
+            <a href="./moreInfo.html#ticketOptions">Ticket Options</a>
+            <p>
+              We offer a variety of ticket options to cater to different
+              visitors' preferences. Get ready to embark on a journey of
+              creativity, excitement, and endless possibilities!
+            </p>
+          </li>
+          <li>
+            <object data="./img/common/map.svg" width="24" height="24"></object>
+            <a href="./moreInfo.html#map">Park Map</a>
+            <p>
+              Navigate the wonders of Minecraft Themepark with our detailed park
+              maps, your key to unlocking endless adventures and ensuring you
+              make the most of your visit
+            </p>
+          </li>
+          <li>
+            <object
+              data="./img/common/accessibility.svg"
+              width="24"
+              height="24"
+            ></object>
+            <a href="./moreInfo.html#accessibility"
+              >Accessibility Information</a
+            >
+            <p>
+              We strive to ensure that everyone, regardless of their abilities,
+              can enjoy the magic and excitement of our park
+            </p>
+          </li>
+          <li>
+            <object data="./img/common/faq.svg" width="24" height="24"></object>
+            <a href="./moreInfo.html#faqs">FAQs</a>
+            <p>
+              If you have any other questions, please loook through Frequently
+              Asked Questions
+            </p>
+          </li>
+        </ol>
+        <!-- a small map -->
+        <img src="./img/moreInfo/map.webp" alt="more info img" width="480" />
+      </section>
+    </main>
+
+    <!-- FOOTER: all pages include this section -->
+    <footer>
+      <hr />
+      <!-- footer logo -->
+      <div id="footerLogo">
+        <a href="./index.html">
+          <img src="./img/common/logo.png" alt="logo" width="120" />
+        </a>
+      </div>
+
+      <!-- sitemap -->
+      <div id="sitemap">
+        <h3>Sitemap</h3>
+        <ol>
+          <li><a href="./detail.html#attractions">Attractions and Rides</a></li>
+          <li><a href="./detail.html#events">Upcoming Special Events</a></li>
+          <li>
+            <a href="./detail.html#diningAndShopping">Dining and Shopping</a>
+          </li>
+          <li><a href="./index.html#ticketing">Get Your Tickets</a></li>
+          <li><a href="./moreInfo.html#ticketOptions">Ticket Options</a></li>
+          <li><a href="./moreInfo.html#map">Park Map</a></li>
+          <li>
+            <a href="./moreInfo.html#accessibility"
+              >Accessibility Information</a
+            >
+          </li>
+          <li><a href="./moreInfo.html#faqs">FAQs</a></li>
+        </ol>
+      </div>
+
+      <!-- Contact Us -->
+      <div id="contactUs">
+        <h3>Contact Us</h3>
+        <!-- via phone -->
+        <div id="contactPhone">
+          <h4>Call Center</h4>
+          <ul id="callCenterInfo">
+            <li><strong>055 465 4557</strong></li>
+            <li><b>Mon to Fri</b> &mdash; 9AM to 6PM CST</li>
+            <li><b>Sat</b> &mdash; 9AM to 5PM CST</li>
+            <li><b>Sun</b> &mdash; 9AM to 4PM CST</li>
+          </ul>
+        </div>
+        <!-- via email -->
+        <div id="contactEmail">
+          <h4>24/7 Support</h4>
+          <ul id="emailInfo">
+            <li><strong>support@minecraft-adventure.com</strong></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Newsletter -->
+      <div id="newsletter">
+        <h3>Newsletter</h3>
+        <p>Don't miss our good deals and latest news!</p>
+        <!-- subscription form -->
+        <form id="newsletterForm">
+          <input type="email" placeholder="Email address" />
+          <a role="button" href="./subscribed.html">Subscribe</a>
+        </form>
+        <!-- policy description -->
+        <p id="newsletterPolicy">
+          <small>
+            To find out more about how Minecraft Park uses and protects your
+            personal data, click <a href="#">here</a>. You can unsubscribe free
+            of charge and at any time.
+          </small>
+        </p>
+      </div>
+
+      <!-- Follow Us -->
+      <div id="followUs">
+        <h3>Follow Us</h3>
+        <!-- social network links -->
+        <ul id="socialNetworkLinks">
+          <li id="twitter">
+            <a href="#"
+              ><svg
+                width="24"
+                height="24"
+                viewBox="0 0 192 192"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+              >
+                <path
+                  stroke="#000000"
+                  stroke-linejoin="round"
+                  stroke-width="12"
+                  d="M126 38c-14.359 0-26 11.64-26 26a25.89 25.89 0 0 0 2.929 12C72 76 56 70 30 46c0 39.5 10 66 34 81-8 11.2-29.333 14.333-42 14.5 0 0 14 13.5 46 13.5 56 0 84-46.783 84-91l18-20h-27.386A25.892 25.892 0 0 0 126 38Z"
+                /></svg
+            ></a>
+          </li>
+          <li id="facebook">
+            <a href="#">
+              <svg
+                fill="#000000"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 2.03998C6.5 2.03998 2 6.52998 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.84998C10.44 7.33998 11.93 5.95998 14.22 5.95998C15.31 5.95998 16.45 6.14998 16.45 6.14998V8.61998H15.19C13.95 8.61998 13.56 9.38998 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96C15.9164 21.5878 18.0622 20.3855 19.6099 18.57C21.1576 16.7546 22.0054 14.4456 22 12.06C22 6.52998 17.5 2.03998 12 2.03998Z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li id="instagram">
+            <a href="#"
+              ><svg
+                width="24"
+                height="24"
+                viewBox="0 0 192 192"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+              >
+                <path
+                  stroke="#000000"
+                  stroke-width="12"
+                  d="M96 162c-14.152 0-24.336-.007-32.276-.777-7.849-.761-12.87-2.223-16.877-4.741a36 36 0 0 1-11.33-11.329c-2.517-4.007-3.98-9.028-4.74-16.877C30.007 120.336 30 110.152 30 96c0-14.152.007-24.336.777-32.276.76-7.849 2.223-12.87 4.74-16.877a36 36 0 0 1 11.33-11.33c4.007-2.517 9.028-3.98 16.877-4.74C71.663 30.007 81.847 30 96 30c14.152 0 24.336.007 32.276.777 7.849.76 12.87 2.223 16.877 4.74a36 36 0 0 1 11.329 11.33c2.518 4.007 3.98 9.028 4.741 16.877.77 7.94.777 18.124.777 32.276 0 14.152-.007 24.336-.777 32.276-.761 7.849-2.223 12.87-4.741 16.877a36 36 0 0 1-11.329 11.329c-4.007 2.518-9.028 3.98-16.877 4.741-7.94.77-18.124.777-32.276.777Z"
+                />
+                <circle
+                  cx="96"
+                  cy="96"
+                  r="30"
+                  stroke="#000000"
+                  stroke-width="12"
+                />
+                <circle cx="135" cy="57" r="9" fill="#000000" /></svg
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
