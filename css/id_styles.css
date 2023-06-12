@@ -1,7 +1,20 @@
-/* index.html ------------------------------------*/
+/* Id Styles ------------------------------------- */
+
+/* Purpose */
+/* to define styles of speicific parts
+
+/* List */
+/* 1. index.html */
+/* 2. detail.html */
+/* 3. moreInfo.html */
+
+/* index.html ------------------------------------ */
+/* written by Joun */
+
+/* Cover */
 #cover {
-  background-image: url('../img/index/cover.avif');
-  background-repeat:no-repeat;
+  background-image: url("../img/index/cover.png");
+  background-repeat: no-repeat;
   background-size: 100vw;
   height: 90vh;
   background-blend-mode: darken();
@@ -10,47 +23,253 @@
   flex-direction: column;
 }
 
-
-
-/* detail.html ------------------------------------*/
-/* moreInfo.html ------------------------------------*/
-#ticketOptions {
-  grid-area: ticketoptions;
+/* featured attractions */
+#featuredList {
+  display: grid;
+  grid-template-columns: 4fr 5fr 3fr;
 }
 
-#ticketOptions {
-  text-align: center;
+#featuredList li {
+  overflow: hidden;
+}
+
+#featuredList li:first-child {
+  grid-row: 1 / 3;
+}
+
+#featuredList .attrImg a img:hover {
+  transform: scale(110%);
+}
+
+#featuredList .attrImg a img {
+  transition: all 0.15s;
+  object-fit: cover;
   width: 100%;
-  color: white;
+  height: 100%;
 }
 
+/* latest evnets */
+#latestEventCard > a {
+  display: flex;
+  border-radius: 0.5rem;
+  border: 0.1rem solid #262423;
+  transition: all 0.15s;
+  background-color: linen;
+}
 
-#ticketOptions li {
-  font-family: monospace, system-ui, sans-serif;
-  font-style: normal;
-  text-decoration: : none;
-  font-variant: normal;
-  font-weight: normal;
-  font-size:0.7em;
-  color: gray;
+#latestEventCard > a:hover {
+  transform: translateY(-0.8rem);
+  box-shadow: 0.3rem 0.3rem 0 0.3rem #262423;
+  background-color: wheat;
+}
+
+#latestEventCard a div {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+#latestEventCard a img {
+  width: 40rem;
+}
+
+/* More Information */
+#moreInfo .sectionContent {
+  display: flex;
+  gap: 2rem;
+}
+
+#moreInfoList {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 50%;
+}
+
+#moreInfoList > li {
+  padding: 2rem;
+  background-color: linen;
+}
+
+#moreInfo .sectionContent img {
+  width: 50%;
+}
+
+#moreInfoList svg {
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+#moreInfoList a {
   display: inline-block;
-  padding: 2px;
 }
 
-#map{
-  text-align:center;
+#moreInfoList li,
+#moreInfoList li:visited,
+#moreInfoList li:link {
+  border-radius: 0.5rem;
+  border: 0.1rem solid #262423;
+  transition: all 0.15s;
+}
+
+#moreInfoList li:hover,
+#moreInfoList li:active {
+  background-color: wheat;
+  transform: translateY(-0.8rem);
+  box-shadow: 0.3rem 0.3rem 0 0.3rem #262423;
+}
+
+/* detail.html -------------------------------------- */
+/* written by Atsuya */
+/* attractions */
+#attractions {
+  display: flex;
+  flex-direction: column;
+}
+
+#attractions .sectionContent {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+#attractions .attrInfo {
+  padding: 4rem;
+}
+
+#attractions .sectionContent > div {
+  display: flex;
+  border: 0.1rem solid #262423;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition: all 0.15s;
+  background-color: linen;
+}
+
+#attractions .sectionContent > div:hover {
+  transform: translateY(-0.8rem);
+  box-shadow: 0.3rem 0.3rem 0 0.3rem #262423;
+}
+
+#attractions .sectionContent > div > img {
+  width: 60rem;
+}
+
+#attr {
+  height: 50rem;
+  padding: 2rem;
+  margin: 4rem 0;
+  border-radius: 2rem;
+}
+
+#attr img {
+  width: 45rem;
+  height: 50rem;
+}
+
+/* events */
+#events .sectionContent {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2rem;
+}
+
+#events .sectionContent > div {
+  border: 0.1rem solid #262423;
+  overflow: hidden;
+  transition: all 0.15s;
+  border-radius: 0.5rem;
+  background-color: linen;
+}
+
+#events .sectionContent > div:hover {
+  transform: translateY(-0.8rem);
+  box-shadow: 0.3rem 0.3rem 0 0.3rem #262423;
+}
+
+#events .sectionContent div img {
   width: 100%;
+  height: 30rem;
 }
 
-#accessibility{
-  text-align:center;
+/* Dining places */
+#dining {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+#dining > div {
+  display: flex;
+
+  border: 0.1rem solid #262423;
+  border-radius: 0.5rem;
+  transition: all 0.15s;
+}
+
+#dining > div:hover {
+  transform: translateY(-0.8rem);
+  box-shadow: 0.3rem 0.3rem 0 0.3rem #262423;
+}
+
+#dining img {
+  width: 60rem;
+}
+
+/* Shopping places */
+#shops {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+#shops > div {
+  display: flex;
+
+  border: 0.1rem solid #262423;
+  border-radius: 0.5rem;
+  transition: all 0.15s;
+}
+
+#shops > div:hover {
+  transform: translateY(-0.8rem);
+  box-shadow: 0.3rem 0.3rem 0 0.3rem #262423;
+  background-color: wheat;
+}
+
+#shops img {
+  width: 60rem;
+}
+
+/* moreInfo.html ------------------------------------*/
+/* written by Alvin */
+
+#ticketOptions .sectionContent {
+  display: flex;
+}
+
+#map {
   width: 100%;
+  text-align: center;
 }
 
+#accessibility > p {
+  margin-bottom: 5rem;
+}
 
-#faqs
-{
-    text-align:center;
-    width: 100%;
-    padding: 200px;
+#accessibility .sectionContent {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+#faqs > p {
+  margin-bottom: 5rem;
+}
+
+#faqs .sectionContent {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }

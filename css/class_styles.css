@@ -1,32 +1,50 @@
+/* Class Styles ------------------------------- */
+
+/* Purpose */
+/* to keep consistent design */
+/* to improve reusability of styles */
+
+/* List */
+/* 1. Util */
+/* 2. Components */
+/* 3. index.html */
+/* 4. detail.html */
+/* 5. moreInfo.html */
+
 /* Util --------------------------------------- */
+/* these are reusabable classes you can use freely like TailwindCSS */
+/* written by Joun */
+
+/* - Font Color */
 .gray-1 {
   color: #f9f8f7;
 }
 
 .gray-2 {
-color:#ece9e8
+  color: #ece9e8;
 }
 
 .gray-3 {
-  color:#c0b6b1
+  color: #c0b6b1;
 }
 
 .gray-4 {
-  color:#736d6a
+  color: #736d6a;
 }
 
 .gray-5 {
-  color:#262423
+  color: #262423;
 }
 
 .orangered {
-  color:orangered
+  color: orangered;
 }
 
 .blueviolet {
-  color:blueviolet;
+  color: blueviolet;
 }
 
+/* -Font Size */
 .font-3xl {
   font-size: 9.044rem;
 }
@@ -59,10 +77,12 @@ color:#ece9e8
   font-size: 0.8rem;
 }
 
+/* - Font Weight */
 .bold {
   font-weight: bold;
 }
 
+/* - Letter Spacing */
 .letter-spacing-10 {
   letter-spacing: -0.1rem;
 }
@@ -75,188 +95,200 @@ color:#ece9e8
   letter-spacing: -0.2rem;
 }
 
+/* - Button */
+.button,
+.button:link,
+.button:visited {
+  padding: 0.7rem 2.1rem;
+  border-radius: 1rem;
+  color: #262423;
+  background-color: coral;
+  font-weight: bold;
+  transition: all 0.1s;
+  cursor: pointer;
+}
 
+.button:hover,
+.button:active {
+  background-color: orangered;
+  box-shadow: 0.2rem 0.2rem 0 0.2rem #262423;
+  transform: translateY(-0.5rem);
+}
+
+.button-violet:link,
+.button-violet:visited {
+  padding: 0.7rem 2.1rem;
+  border-radius: 1rem;
+  color: #262423;
+  background-color: rgb(205, 171, 255);
+  font-weight: bold;
+  border: 0.1rem solid #262423;
+  transition: all 0.1s;
+}
+
+.button-violet:hover,
+.button-violet:active {
+  background-color: rgb(139, 123, 239);
+  box-shadow: 0.2rem 0.2rem 0 0.2rem #262423;
+  transform: translateY(-0.5rem);
+}
+
+/* - Text Link */
+.text-link,
+.text-link:visited,
+.text-link:link {
+  margin: auto 0;
+  padding-bottom: 0.2rem;
+  border-bottom: 0.2rem solid transparent;
+  transition: all 0.1s;
+}
+
+.text-link:hover,
+.text-link:active {
+  border-bottom: 0.2rem solid blueviolet;
+  color: blueviolet;
+}
+
+/* Components ---------------------------- */
+/* written by Joun */
+
+/* Section Head */
+.sectionHead {
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+}
+
+.sectionHead a {
+  margin: auto 0;
+  padding-bottom: 0.2rem;
+  border-bottom: 0.2rem solid transparent;
+  transition: all 0.1s;
+}
+
+.sectionHead a:hover {
+  border-bottom: 0.2rem solid blueviolet;
+  color: blueviolet;
+}
 
 /* index.html ------------------------------------ */
 
+/* detail.html ------------------------------------ */
+/* written by Atsuya */
 
+/* Attraction Section */
+.attrInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
 
+.attrLimit {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
 
+/* Event Section */
+.evInfo {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
 
+/* Dining and Shopping Section */
+.diningInfo {
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: linen;
+}
 
+/* Shopping Places Section */
+.shopInfo {
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: linen;
+}
 
 /* moreInfo.html ------------------------------------ */
-
+/* written by Alvin */
+/* ticket price */
 .ticketOption {
-  background: wheat;
-  font-family: monospace, system-ui, sans-serif;
-  font-style: normal;
-  text-decoration: : none;
-  font-variant: normal;
-  font-weight: normal;
-  font-size:1em;
-  color: black;
-  display: inline-block;
-  padding: 2px;
-}
-
-.ticketOption{
-  display: grid;
-  border: 1px solid grey;
-  grid-template-rows: 50px;
-  float: left;
-  width: 33.33%;
-  padding: 20px;
-}
-
-.ticketOption ul{
-  height: 70px;
-}
-
-.ticketPrice{
-  width: 100%;
-  padding: 15px;
-  color: brown;
-}
-
-.sectionHead::after{
-  content: "";
-  display: table;
-  clear: both;
-}
-
-
-.accDescription{
-  font-family: monospace, system-ui, sans-serif;
-  font-style: normal;
-  text-align: left;
-  text-decoration: : none;
-  font-variant: normal;
-  font-weight: normal;
-  font-size:0.3em;
-  color: darkcyan;
-  display: inline-block;
-  padding: 2px;
-}
-
-.accOpeningHours{
-  font-family: monospace, system-ui, sans-serif;
-  font-style: normal;
-  text-decoration: none;
-  font-variant: normal;
-  font-weight: normal;
-  font-size:0.9em;
-  color: white;
-  padding: 1px;
-}
-
-.accContact{
-  font-style: normal;
-  text-decoration:underline;
-  font-variant: normal;
-  font-weight: normal;
-  font-size:0.6em;
-  color: white;  
-}
-
-.accDetails{
-  font-family: monospace, system-ui, sans-serif;
-  font-style: normal;
-  text-align: left;
-  text-decoration: : none;
-  font-variant: normal;
-  font-weight: normal;
-  font-size:0.3em;
-  color: darkblue;
-  display: inline-block;
-  padding: 2px;
-}
-.accDetails li p{
-  font-family: monospace, system-ui, sans-serif;
-  font-style: normal;
-  text-align: left;
-  text-decoration: : none;
-  font-variant: normal;
-  font-weight: normal;
-  font-size:0.3em;
-  color: deeppink;
+  background-color: linen;
   display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem 3rem;
+
+  border: 0.1rem solid #262423;
 }
 
-.parkinglist ul{
-  font-family: monospace, system-ui, sans-serif;
-  font-style: normal;
-  text-align: left;
-  text-decoration: : none;
-  font-variant: normal;
-  font-weight: normal;
-  font-size:0.3em;
-  color: darkcyan;
-  display: inline-block;
-  padding: 10px;
+.ticketOption:hover {
+  background-color: wheat;
 }
 
-.accSupport{
-  display: grid;
-  grid-template-rows: 60px;
-  float: left;
-  width: 25%;
-  padding: 20px;
+.ticketOption ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
-
-
-.faqDescription{   
-  font-family: monospace, system-ui, sans-serif;
-  font-style: normal;
-  text-decoration: : none;
-  font-variant: normal;
-  font-weight: normal;
-  font-size:0.9em;
-  color: darkcyan;
-  width: 80%;
-  display: inline-block;
-  padding: 10px;
+.ticketPrice small {
+  display: block;
 }
 
-.faq{
-  text-align: left;
-  font-family: monospace, system-ui, sans-serif;
-  font-style: normal;
-  text-decoration: : none;
-  font-variant: normal;
-  font-weight: normal;
-  font-size:0.7em;
-  color: darkblue;
-  width: 50%;
-  display: inline-block;
-  padding: 3px;
+.ticketPrice strong {
+  color: orangered;
+  display: block;
 }
 
+/* accessibility */
+.accSupport {
+  background-color: linen;
+  padding: 2rem;
+  border: 0.1rem solid #262423;
+}
 
+.accSupport > h3 {
+  margin-bottom: 2rem;
+}
 
+.accDescription {
+  margin: 1rem 0;
+}
 
-@media screen and (max-width:600px){
-  .accSupport{
-      width: 100%;
+.accDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  padding: 0 2rem;
+}
+
+/* faqs */
+
+.faq summary:hover {
+  cursor: pointer;
+  color: blueviolet;
+}
+
+.faq details {
+  opacity: 80%;
+}
+
+@media screen and (max-width: 600px) {
+  .accSupport {
+    width: 100%;
   }
 }
 
-@media screen and (max-width:600px){
-  .ticketOption{
-      width: 100%;
+@media screen and (max-width: 600px) {
+  .ticketOption {
+    width: 100%;
   }
-}
-
-
-/* Footer ---------------------- */
-.grid-container-footer {
-  display: grid;
-  grid-template-columns: auto auto auto auto auto auto auto;
-  grid-template-areas:
-  'header header header header header header'
-  'nav nav nav nav nav nav'
-  'main main main main main main'
-  'footer footer footer footer footer footer'
-  'contact contact news news followus followus';
 }
