@@ -399,6 +399,54 @@ Edited date on 6/26/2023 by Joun
 /* moreInfo.html ------------------------------------*/
 /* written by Alvin */
 
+/* --added by Joun------------------------------ */
+
+#ticketOptions .ticketOption {
+  transition: all 0.3s;
+}
+
+#ticketOptions > .sectionContent > :nth-child(2) {
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0.5rem 0.5rem 0 0 var(--color-gray-5);
+  transform: scale(1.02);
+}
+
+#ticketOptions > .sectionContent > :nth-child(2)::after {
+  content: "BEST";
+  border: 0.1rem solid var(--color-gray-5);
+  font-size: var(--size-m);
+  color: #fff;
+  font-weight: bold;
+  position: absolute;
+  text-align: center;
+  width: 15rem;
+  height: 2.6rem;
+  padding: 0.3rem;
+  background-color: var(--color-primary);
+  top: 0;
+  left: 0;
+  transform: rotate(-35deg) translate(-22%, -30%);
+}
+
+.ticketPrice strong {
+  font-size: var(--size-l);
+}
+
+#ticketOptions > .sectionContent > :nth-child(2) > .ticketPrice > strong {
+  font-size: var(--size-xl);
+}
+
+#ticketOptions > .sectionContent > :nth-child(2):hover {
+  box-shadow: 1rem 1rem 0 0 var(--color-gray-5);
+  transform: scale(1.05);
+}
+/* ---------------------------------------- */
+
+#ticketOptions .ticketOption {
+  padding: 5rem 4rem 4rem 5rem;
+}
+
 #ticketOptions .sectionHead {
   padding-top: 5rem;
 }
