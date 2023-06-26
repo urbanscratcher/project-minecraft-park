@@ -71,13 +71,10 @@
       <!-- COVER SECTION -->
       <section id="cover">
         <div>
-          <h1>Enter the Blocky Wonderland: Minecraft Adventure Park</h1>
-          <p>
-            Step into a world where imagination knows no bounds and the
-            possibilities are endless. Unleash your inner adventurer and let
-            your creativity soar as you traverse the vast expanses of our
-            themepark, where the only limit is your imagination.
-          </p>
+          <h1>
+            Enter the Blocky Wonderland:
+            <span>Minecraft Adventure Park</span>
+          </h1>
         </div>
       </section>
 
@@ -90,8 +87,6 @@
         <!-- external video -->
         <iframe
           title="an overview of minecraft adventure"
-          width="480"
-          height="270"
           src="https://www.youtube.com/embed/MmB9b5njVbA"
         >
         </iframe>
@@ -165,47 +160,59 @@
         <form id="ticketForm">
           <!-- ticket type form -->
           <div id="ticketTypeSelectForm">
-            <label for="ticketTypeSelect">Choose a Ticket Option</label>
-            <select name="ticketTypeSelect" id="ticketTypeSelect" size="3">
+            <label for="ticketTypeSelect">Ticket Option</label>
+            <select name="ticketTypeSelect" id="ticketTypeSelect">
               <option value="dayPass">Day Pass</option>
               <option value="annualPass">Annual Pass</option>
               <option value="diamondPass">Diamond Pass</option>
             </select>
           </div>
+
           <!-- numbers of admission by ages form -->
-          <div id="ticketAgeForm">
-            <label for="adultsNumber">Adults(12+)</label>
-            <input
-              type="number"
-              min="0"
-              id="adultsNumber"
-              name="adultsNumber"
-              placeholder="0"
-            />
-            <label for="childrenNumber">Children(4&mdash;11)</label>
-            <input
-              type="number"
-              min="0"
-              id="childrenNumber"
-              name="childrenNumber"
-              placeholder="0"
-            />
-            <label for="seniorNumber">Seniors(65+)</label>
-            <input
-              type="number"
-              min="0"
-              id="seniorNumber"
-              name="seniorNumber"
-              placeholder="0"
-            />
-          </div>
+          <ul id="ticketAgeForm">
+            <li>
+              <label for="adultsNumber">Adults(12+)</label>
+              <input
+                type="number"
+                min="0"
+                id="adultsNumber"
+                name="adultsNumber"
+                placeholder="0"
+              />
+            </li>
+            <li>
+              <label for="childrenNumber">Children(4-11)</label>
+              <input
+                type="number"
+                min="0"
+                id="childrenNumber"
+                name="childrenNumber"
+                placeholder="0"
+              />
+            </li>
+            <li>
+              <label for="seniorNumber">Seniors(65+)</label>
+              <input
+                type="number"
+                min="0"
+                id="seniorNumber"
+                name="seniorNumber"
+                placeholder="0"
+              />
+            </li>
+          </ul>
+
           <!-- visit date form -->
-          <div id="ticketDateForm">
-            <label for="startDate">Start from</label>
-            <input type="date" id="startDate" name="startDate" />
-            <label for="endTo">End to</label>
-            <input type="date" id="endTo" name="endTo" />
-          </div>
+          <ul id="ticketDateForm">
+            <li>
+              <label for="startDate">Start from</label>
+              <input type="date" id="startDate" name="startDate" />
+            </li>
+            <li>
+              <label for="endTo">End to</label>
+              <input type="date" id="endTo" name="endTo" />
+            </li>
+          </ul>
 
           <!-- accesibility option form -->
           <div id="ticketNeedHelpForm">
@@ -277,7 +284,7 @@
       </section>
 
       <!-- DINING AND SHOPPING SECTION -->
-      <section id="diningAndShopping">
+      <section id="featuredShops">
         <!-- head -->
         <div class="sectionHead">
           <h2>Dining and Shopping</h2>
@@ -289,9 +296,15 @@
             Embark on a delectable culinary journey and let your taste buds
             explore a world of flavors at Minecraft Themepark
           </p>
-          <a href="./detail.html#dining" class="text-link"
-            >All Dining Options →</a
-          >
+          <div>
+            <a href="./detail.html#dining" class="text-link"
+              >All Dining Options →</a
+            >
+          </div>
+          <img
+            src="./img/detail/diningForest.webp"
+            alt="a photo of dining forest"
+          />
         </div>
         <!-- introducing shopping -->
         <div id="shoppingIntro">
@@ -300,9 +313,15 @@
             With a myriad of shopping options to explore, prepare to find
             treasures that capture the essence of Minecraft
           </p>
-          <a href="./detail.html#shops" class="text-link"
-            >All Shopping Options →</a
-          >
+          <div>
+            <a href="./detail.html#shops" class="text-link"
+              >All Shopping Options →</a
+            >
+          </div>
+          <img
+            src="./img/detail/shopCouture.jpg"
+            alt="a photo of shop couture"
+          />
         </div>
       </section>
 
@@ -328,7 +347,7 @@
                     d="M6,23H18a3,3,0,0,0,3-3V4a3,3,0,0,0-3-3H15a1,1,0,0,0-1,1,2,2,0,0,1-4,0A1,1,0,0,0,9,1H6A3,3,0,0,0,3,4V20A3,3,0,0,0,6,23ZM5,10h.882a1,1,0,0,0,0-2H5V4A1,1,0,0,1,6,3H8.126a4,4,0,0,0,7.748,0H18a1,1,0,0,1,1,1V8h-.882a1,1,0,0,0,0,2H19V20a1,1,0,0,1-1,1H6a1,1,0,0,1-1-1ZM7.706,9a1,1,0,0,1,1-1h1.882a1,1,0,1,1,0,2H8.706A1,1,0,0,1,7.706,9Zm4.706,0a1,1,0,0,1,1-1h1.882a1,1,0,0,1,0,2H13.412A1,1,0,0,1,12.412,9Z"
                   />
                 </svg>
-                <h4>&nbsp;Ticket Options</h4>
+                <h4>Ticket Options</h4>
                 <p>
                   We offer a variety of ticket options to cater to different
                   visitors' preferences. Get ready to embark on a journey of
@@ -350,7 +369,7 @@
                     fill="#000000"
                   />
                 </svg>
-                <h4>&nbsp;Park Map</h4>
+                <h4>Park Map</h4>
                 <p>
                   Navigate the wonders of Minecraft Themepark with our detailed
                   park maps, your key to unlocking endless adventures and
@@ -392,7 +411,7 @@
                     stroke-linejoin="round"
                   />
                 </svg>
-                <h4>&nbsp;Accessibility Information</h4>
+                <h4>Accessibility Information</h4>
                 <p>
                   We strive to ensure that everyone, regardless of their
                   abilities, can enjoy the magic and excitement of our park
@@ -414,7 +433,7 @@
                     />
                   </g>
                 </svg>
-                <h4>&nbsp;FAQs</h4>
+                <h4>FAQs</h4>
                 <p>
                   If you have any other questions, please loook through
                   Frequently Asked Questions
@@ -423,10 +442,17 @@
             </li>
           </ol>
           <!-- a small map -->
-          <img src="./img/moreInfo/map.webp" alt="more info img" width="480" />
+          <img src="./img/moreInfo/map.webp" alt="more info img" />
         </div>
       </section>
     </main>
+
+    <!--
+      Move To the Top
+      Add date on 6/23/2023 by Atsuya
+      Edited date on 6/25/2023 by Joun
+    -->
+    <a href="#" class="top">Top &#8593;</a>
 
     <!-- FOOTER: all pages include this section -->
     <footer>

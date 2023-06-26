@@ -21,6 +21,7 @@
 html {
   /* 62.5% of 16px browser font size is 10px, meaning that 1rem = 10px  */
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 /* Reset Everyting ------------------------------- */
@@ -182,52 +183,74 @@ h6,
 p,
 a,
 b,
-strong {
+strong,
+option {
   font-family: "Nunito Sans", system-ui, sans-serif;
 }
 
 /* Font Size & Color ------------------------------------- */
 /* - Font Size Rule */
-/* For visual hierarchy, perfect fifth is applied to type scale */
-/* 
-  -- 3xl : 9.044rem
-  -- 2xl : 6.396rem
-  -- xl : 4.523rem
-  -- l : 3.199rem
-  -- m : 2.262rem
-  -- s : 1.6rem
-  -- xs : 1.132rem
-  -- 2xs : 0.8rem
-*/
+/* For visual hierarchy, perfect fourth is applied to type scale */
+:root {
+  --size-3xl: 6.734rem;
+  --size-2xl: 5.052rem;
+  --size-xl: 3.79rem;
+  --size-l: 2.843rem;
+  --size-m: 2.133rem;
+  --size-s: 1.6rem;
+  --size-xs: 1.2rem;
+  --size-2xs: 0.9rem;
+}
 
 /* - Font Color Rule */
 /*
- -- The biggest heading & call-to-action : strong color like orangered
- -- Normal headings & link highlights : playful and attractive color like blueviolet
+ -- The biggest heading & call-to-action : strong color like #FF591C
+ -- Normal headings & link highlights : playful and attractive color like blueviolet(#8a2be2)
  -- Background colors for secitonal division : light yellow-ish colors like linen and wheat
  -- Alert on the top : stong yellow color for alarming 
  -- 5 level Greyscale system : #F9F8F7 #ECE9E8 #C0B6B1 #736D6A #262423
  -- Using pure black should be avoided for reading comfortability -> use #262423
  */
 
+:root {
+  --color-primary: #ff591c;
+  --color-primary-tint: coral;
+  --color-secondary: #8a2be2;
+  --color-secondary-tint: #8b7bef;
+  --color-secondary-tint-2: #cdabff;
+  --color-secondary-shade: #531a88;
+  --color-alert: gold;
+  --color-section: linen;
+  --color-section-hover: wheat;
+  --color-gray-5: #262423;
+  --color-gray-4: #736d6a;
+  --color-gray-3: #c0b6b1;
+  --color-gray-2: #ece9e8;
+  --color-gray-1: #f9f8f7;
+}
+
 h1 {
-  font-size: 9rem;
-  color: orangered;
+  font-size: var(--size-3xl);
+  color: var(--color-primary);
+  line-height: var(--color-gray-5);
 }
 
 h2 {
-  font-size: 6.4rem;
-  color: blueviolet;
+  font-size: var(--size-2xl);
+  color: var(--color-secondary);
+  line-height: 1;
 }
 
 h3 {
-  font-size: 4.5rem;
-  color: #262423;
+  font-size: var(--size-xl);
+  color: var(--color-gray-5);
+  line-height: 1;
 }
 
 h4 {
-  font-size: 3.2rem;
-  color: #262423;
+  font-size: var(--size-l);
+  color: var(--color-gray-5);
+  line-height: 1;
 }
 
 a,
@@ -238,38 +261,40 @@ option,
 label,
 input,
 summary,
-details {
-  font-size: 2.3rem;
-  color: #262423;
+details,
+select {
+  font-size: var(--size-m);
+  color: var(--color-gray-5);
   line-height: 1.4;
 }
 
 small {
-  font-size: 1.6rem;
+  font-size: var(--size-s);
+  line-height: 1.5;
 }
 
 /* Whitespacing --------------------------- */
-h1 {
-  margin: 2rem 2rem 0 2rem;
-}
 
 h2 {
-  margin: 2rem;
-}
-
-h3 {
-  margin: 1rem;
+  padding: 2rem 0;
 }
 
 main > :not(#cover, footer) {
-  width: 140rem;
+  max-width: 140rem;
   margin-left: auto;
   margin-right: auto;
 }
 
 main > section {
   width: 100%;
-  margin-bottom: 8rem;
+}
+
+input,
+select {
+  border: 0.1rem solid var(--color-gray-4);
+  margin: 0.5rem;
+  padding: 1rem;
+  border-radius: 1rem;
 }
 
 /* highlighting ------------------------ */

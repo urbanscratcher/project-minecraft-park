@@ -11,19 +11,27 @@
 /* All written by Joun */
 
 /* Header - Alert ------------------------------------- */
+
+header {
+  position: fixed;
+  top: 0;
+  z-index: 50;
+  width: 100vw;
+}
+
 #alert {
-  background: gold;
+  background: var(--color-alert);
   padding: 0.5rem 7.9rem;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  border-bottom: 0.1rem solid #262423;
+  border-bottom: 0.1rem solid var(--color-gray-5);
 }
 
 #alert p {
-  color: #262423;
+  color: var(--color-gray-5);
 }
 
 #alert p,
@@ -31,35 +39,14 @@
   font-size: 1.6rem;
 }
 
-#alert a:link,
-#alert a:visited {
-  color: #262423;
-  border: 0.1rem solid #262423;
-}
-
-#alert a:link,
-#alert a:visited {
-  padding: 0.7rem 2.1rem;
-  border-radius: 1rem;
-  color: #262423;
-  background-color: coral;
-  font-weight: bold;
-  transition: all 0.1s;
-}
-
-#alert a:hover {
-  background-color: orangered;
-  box-shadow: 0.2rem 0.2rem 0 0.2rem #262423;
-}
-
 /* Header - Main NavBar ------------------------------------- */
 #mainNav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   padding: 0 15.8rem;
-  border-bottom: 0.1rem solid #262423;
+  border-bottom: 0.1rem solid var(--color-gray-5);
+  background-color: #ffffff;
 }
 
 #mainNav > a {
@@ -74,19 +61,30 @@
 
 #mainNav ol li a:link,
 #mainNav ol li a:visited {
-  color: #262423;
+  color: var(--color-gray-5);
 }
 
 #mainNav ol li a:hover,
 #mainNav ol li a:active {
-  color: orangered;
+  color: var(--color-primary);
+}
+
+/* Main - adjusting sticky nav whitespace -------------  */
+
+main {
+  margin-top: 12.6rem;
 }
 
 /* Footer ------------------------------------------- */
 footer {
-  margin-bottom: 8rem;
   display: flex;
   justify-content: space-around;
+
+  background-color: var(--color-gray-1);
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+
+  margin-top: 20rem;
 }
 
 /* logo */

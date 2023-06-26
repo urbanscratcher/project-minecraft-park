@@ -12,70 +12,8 @@
 /* 5. moreInfo.html */
 
 /* Util --------------------------------------- */
-/* these are reusabable classes you can use freely like TailwindCSS */
+/* these are reusabable classes you can use freely */
 /* written by Joun */
-
-/* - Font Color */
-.gray-1 {
-  color: #f9f8f7;
-}
-
-.gray-2 {
-  color: #ece9e8;
-}
-
-.gray-3 {
-  color: #c0b6b1;
-}
-
-.gray-4 {
-  color: #736d6a;
-}
-
-.gray-5 {
-  color: #262423;
-}
-
-.orangered {
-  color: orangered;
-}
-
-.blueviolet {
-  color: blueviolet;
-}
-
-/* -Font Size */
-.font-3xl {
-  font-size: 9.044rem;
-}
-
-.font-2xl {
-  font-size: 6.396rem;
-}
-
-.font-xl {
-  font-size: 4.523rem;
-}
-
-.font-l {
-  font-size: 3.199rem;
-}
-
-.font-m {
-  font-size: 2.262rem;
-}
-
-.font-s {
-  font-size: 1.6rem;
-}
-
-.font-xs {
-  font-size: 1.132rem;
-}
-
-.font-2xs {
-  font-size: 0.8rem;
-}
 
 /* - Font Weight */
 .bold {
@@ -95,65 +33,73 @@
   letter-spacing: -0.2rem;
 }
 
+/* Components ---------------------------- */
+/* written by Joun */
+
 /* - Button */
 .button,
 .button:link,
 .button:visited {
+  border: 0.1rem solid var(--color-gray-5);
+  color: var(--color-gray-5);
+  font-weight: bold;
   padding: 0.7rem 2.1rem;
   border-radius: 1rem;
-  color: #262423;
-  background-color: coral;
-  font-weight: bold;
+  background-color: var(--color-primary-tint);
+  box-shadow: 0.2rem 0.2rem 0 0.2rem var(--color-gray-5);
   transition: all 0.1s;
+  transform: translateY(-0.5rem);
   cursor: pointer;
 }
 
-.button:hover,
+.button:hover {
+  background-color: var(--color-primary);
+  transform: translateY(-0.3rem);
+}
+
 .button:active {
-  background-color: orangered;
-  box-shadow: 0.2rem 0.2rem 0 0.2rem #262423;
-  transform: translateY(-0.5rem);
+  box-shadow: none;
+  transform: translateY(0rem);
+  background-color: var(--color-primary);
 }
 
 .button-violet:link,
 .button-violet:visited {
-  padding: 0.7rem 2.1rem;
-  border-radius: 1rem;
-  color: #262423;
-  background-color: rgb(205, 171, 255);
-  font-weight: bold;
-  border: 0.1rem solid #262423;
-  transition: all 0.1s;
+  background-color: var(--color-secondary-tint);
+  box-shadow: 0.2rem 0.2rem 0 0.2rem var(--color-gray-5);
+  transform: translateY(-0.5rem);
 }
 
 .button-violet:hover,
 .button-violet:active {
-  background-color: rgb(139, 123, 239);
-  box-shadow: 0.2rem 0.2rem 0 0.2rem #262423;
-  transform: translateY(-0.5rem);
+  padding: 0.7rem 2.1rem;
+  border-radius: 1rem;
+  color: var(--color-gray-5);
+  background-color: var(--color-secondary-tint-2);
+  font-weight: bold;
+  border: 0.1rem solid var(--color-gray-5);
+  transition: all 0.1s;
 }
 
 /* - Text Link */
 .text-link,
 .text-link:visited,
 .text-link:link {
+  border-bottom: 0.2rem solid var(--color-secondary);
+  color: var(--color-secondary);
+}
+
+.text-link:hover,
+.text-link:active {
   margin: auto 0;
   padding-bottom: 0.2rem;
   border-bottom: 0.2rem solid transparent;
   transition: all 0.1s;
 }
 
-.text-link:hover,
-.text-link:active {
-  border-bottom: 0.2rem solid blueviolet;
-  color: blueviolet;
-}
-
-/* Components ---------------------------- */
-/* written by Joun */
-
 /* Section Head */
 .sectionHead {
+  padding-top: 15rem;
   display: flex;
   justify-content: space-between;
   justify-items: center;
@@ -162,13 +108,14 @@
 .sectionHead a {
   margin: auto 0;
   padding-bottom: 0.2rem;
-  border-bottom: 0.2rem solid transparent;
   transition: all 0.1s;
+
+  border-bottom: 0.2rem solid var(--color-secondary);
+  color: var(--color-secondary);
 }
 
 .sectionHead a:hover {
-  border-bottom: 0.2rem solid blueviolet;
-  color: blueviolet;
+  border-bottom: 0.2rem solid transparent;
 }
 
 /* index.html ------------------------------------ */
@@ -203,7 +150,7 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  background-color: linen;
+  background-color: var(--color-section);
 }
 
 /* Shopping Places Section */
@@ -212,24 +159,24 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  background-color: linen;
+  background-color: var(--color-section);
 }
 
 /* moreInfo.html ------------------------------------ */
 /* written by Alvin */
 /* ticket price */
 .ticketOption {
-  background-color: linen;
+  background-color: var(--color-section);
   display: flex;
   flex-direction: column;
   gap: 2rem;
   padding: 2rem 3rem;
 
-  border: 0.1rem solid #262423;
+  border: 0.1rem solid var(--color-gray-5);
 }
 
 .ticketOption:hover {
-  background-color: wheat;
+  background-color: var(--color-section-hover);
 }
 
 .ticketOption ul {
@@ -243,15 +190,15 @@
 }
 
 .ticketPrice strong {
-  color: orangered;
+  color: var(--color-primary);
   display: block;
 }
 
 /* accessibility */
 .accSupport {
-  background-color: linen;
+  background-color: var(--color-section);
   padding: 2rem;
-  border: 0.1rem solid #262423;
+  border: 0.1rem solid var(--color-gray-5);
 }
 
 .accSupport > h3 {
@@ -274,7 +221,7 @@
 
 .faq summary:hover {
   cursor: pointer;
-  color: blueviolet;
+  color: var(--color-secondary);
 }
 
 .faq details {

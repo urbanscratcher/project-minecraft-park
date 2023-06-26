@@ -4,11 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Minecraft Adventure Park &mdash; More Info</title>
+    <!-- import fonts-->
+    <!-- Luckiest Guy for headilines, Nunito Sans for normal text -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Questrial&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- import stylesheets -->
     <link rel="stylesheet" href="./css/semantic_styles.css" />
     <link rel="stylesheet" href="./css/global_styles.css" />
     <link rel="stylesheet" href="./css/class_styles.css" />
     <link rel="stylesheet" href="./css/id_styles.css" />
+
+    <title>Minecraft Adventure Park &mdash; More Info</title>
   </head>
   <body>
     <!-- <div class = "grid-container-index"> -->
@@ -18,14 +29,11 @@
       <!-- ALERT BAR -->
       <div id="alert">
         <p>Opening Hours Today &mdash; from 09:00AM to 11:00PM</p>
-        <a href="./index.html#ticketing">GET TICKETS NOW!</a>
+        <a href="./index.html#ticketing" class="button">GET TICKETS NOW!</a>
       </div>
-
       <!-- MAIN NAVIGATION BAR -->
       <nav id="mainNav">
         <!-- logo -->
-        <!-- <nav id="navLogo"> -->
-        <!-- Joun: I believe nav should represent a section of a page to provide nav links, not for part -->
         <a href="index.html">
           <img
             src="./img/common/logo.png"
@@ -33,24 +41,19 @@
             width="200"
           />
         </a>
-        <!-- </nav> -->
-
         <!-- menu items -->
-        <!-- <nav id="navMenu"> -->
-        <!-- Joun: again, the nav tag should include entire nav bar area. the id is moved to ol -->
-        <ol id="navMenu">
+        <ol>
           <li><a href="./detail.html#attractions">Attractions</a></li>
           <li><a href="./detail.html#events">Events</a></li>
           <li>
-            <a href="./detail.html#diningAndShopping">Dining & Shopping</a>
+            <a href="./detail.html#diningAndShopping">Shops</a>
           </li>
-          <li><a href="./moreInfo.html#ticketOptions">Ticket Options</a></li>
+          <li><a href="./moreInfo.html#ticketOptions">Tickets</a></li>
           <li><a href="./moreInfo.html#map">Map</a></li>
           <li><a href="./moreInfo.html#accessibility">Accessibility</a></li>
           <li><a href="./moreInfo.html#faqs">FAQs</a></li>
         </ol>
       </nav>
-      <!-- </nav> -->
     </header>
 
     <!-- MAIN: main content for this page -->
@@ -72,7 +75,7 @@
               </li>
             </ul>
             <p class="ticketPrice">
-              starting From
+              Starting From
               <strong>$59</strong>
               <small>per person before taxes & fees</small>
             </p>
@@ -88,7 +91,7 @@
               <li>FREE Parking</li>
             </ul>
             <p class="ticketPrice">
-              starting From
+              Starting From
               <strong>$9.99</strong>
               <small>per month before taxes & fees</small>
             </p>
@@ -105,7 +108,7 @@
               <li>Fast Entrance</li>
             </ul>
             <p class="ticketPrice">
-              starting From
+              Starting From
               <strong>$119</strong>
               <small>per person before taxes & fees</small>
             </p>
@@ -273,7 +276,6 @@
       </section>
 
       <!-- FAQs SECTION -->
-
       <section id="faqs">
         <!-- head -->
         <div class="sectionHead">
@@ -338,6 +340,13 @@
         </div>
       </section>
     </main>
+
+    <!--
+      Move To the Top
+      Add date on 6/23/2023 by Atsuya
+      Edited date on 6/25/2023 by Joun
+    -->
+    <a href="#" class="top">Top &#8593;</a>
 
     <!-- FOOTER: all pages include this section -->
     <footer>
