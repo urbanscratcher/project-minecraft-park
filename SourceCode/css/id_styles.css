@@ -1,0 +1,462 @@
+/* Id Styles ------------------------------------- */
+/* This is build to define styles of speicific parts */
+
+/* Table Of Content */
+/* 1. index.html */
+/* 2. detail.html */
+/* 3. moreInfo.html */
+
+/* index.html ------------------------------------ */
+/* Cover */
+#cover {
+  background-image: linear-gradient(var(--color-gray-1), #45167150),
+    url("../img/index/cover.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 90vh;
+  background-blend-mode: hard-light;
+
+  display: flex;
+  flex-direction: column;
+}
+
+#cover div {
+  max-width: 120rem;
+  margin: 8rem auto;
+}
+
+#cover h1 span {
+  font-size: 8.7rem;
+  letter-spacing: 0.2rem;
+}
+
+/* intro */
+#intro iframe {
+  width: 100%;
+  height: 85vh;
+  max-height: 78rem;
+}
+
+/* tickets */
+#ticketForm {
+  display: grid;
+  grid-template-columns: auto 1fr auto 1fr;
+}
+
+#ticketNeedHelpForm {
+  grid-row: 2/3;
+  grid-column: 1/3;
+}
+
+#ticketForm > input {
+  grid-column: 4/5;
+  grid-row: 1/3;
+  align-self: center;
+}
+
+#ticketForm label {
+  display: flex;
+  margin: 0.5rem;
+  max-width: 18rem;
+}
+
+#ticketForm ul {
+  display: flex;
+}
+
+#ticketAgeForm input {
+  max-width: 15rem;
+}
+
+#ticketNeedHelpForm label {
+  display: inline-block;
+  max-width: 100%;
+  padding-left: 0.5rem;
+}
+
+#ticketNeedHelpForm input[type="checkbox"] {
+  transform: scale(2);
+}
+
+/* featured attractions */
+#featuredList {
+  display: grid;
+  grid-template-columns: 4fr 5fr 3fr;
+}
+
+#featuredList li {
+  overflow: hidden;
+}
+
+#featuredList li:first-child {
+  grid-row: 1 / 3;
+}
+
+#featuredList .attrImg a img:hover {
+  transform: scale(110%);
+}
+
+#featuredList .attrImg a img {
+  transition: all 0.15s;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/* latest evnets */
+#latestEventCard > a {
+  display: flex;
+  border-radius: 0.5rem;
+  border: 0.1rem solid var(--color-gray-5);
+  transition: all 0.15s;
+  background-color: var(--color-section);
+}
+
+#latestEventCard > a:hover {
+  transform: translateY(-0.8rem);
+  box-shadow: 0.3rem 0.3rem 0 0.3rem #262423;
+  background-color: wheat;
+}
+
+#latestEventCard a div {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+#latestEventCard a img {
+  width: 40rem;
+}
+
+/* Dining and shopping */
+#featuredShops {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+#featuredShops img {
+  width: 100%;
+  object-fit: cover;
+  height: 45rem;
+  transform: translateY(2px);
+}
+
+#featuredShops div:not(.sectionHead) {
+  background-color: var(--color-section);
+}
+
+#featuredShops div div {
+  text-align: right;
+}
+
+#featuredShops .sectionHead {
+  grid-column: 1/ -1;
+}
+
+#diningIntro,
+#shoppingIntro {
+  border-radius: 0.5rem;
+  border: 0.1rem solid var(--color-gray-5);
+}
+
+#diningIntro :not(img),
+#shoppingIntro :not(img) {
+  margin: 2rem 1.5rem;
+}
+
+/* More Information */
+#moreInfo .sectionContent {
+  display: flex;
+  gap: 2rem;
+}
+
+#moreInfoList {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 50%;
+}
+
+#moreInfoList h4 {
+  margin: 0.7rem 0;
+}
+
+#moreInfoList > li {
+  padding: 2rem;
+  background-color: var(--color-section);
+}
+
+#moreInfo .sectionContent img {
+  width: 50%;
+  object-fit: cover;
+}
+
+#moreInfoList svg {
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+#moreInfoList a {
+  display: inline-block;
+}
+
+#moreInfoList li,
+#moreInfoList li:visited,
+#moreInfoList li:link {
+  border-radius: 0.5rem;
+  border: 0.1rem solid var(--color-gray-5);
+  transition: all 0.15s;
+}
+
+#moreInfoList li:hover,
+#moreInfoList li:active {
+  background-color: var(--color-section-hover);
+  transform: translateY(-0.8rem);
+  box-shadow: 0.3rem 0.3rem 0 0.3rem var(--color-gray-5);
+}
+
+/* detail.html -------------------------------------- */
+.top {
+  /* position */
+  position: fixed;
+  bottom: 3rem;
+  right: -3rem;
+  transform: translateX(-50%);
+
+  /* visual styling */
+  text-transform: uppercase;
+  padding: 1rem 1.5rem;
+  border: 0.1rem solid var(--color-gray-5);
+  color: var(--color-gray-1);
+  border-radius: 3rem;
+  background: linear-gradient(
+    -217deg,
+    var(--color-secondary),
+    var(--color-primary)
+  );
+  background-size: 200% 200%;
+}
+
+.top:hover {
+  animation: gradient 1s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+#attractions {
+  display: flex;
+  flex-direction: column;
+}
+
+#attractions .sectionHead {
+  padding-top: 5rem;
+}
+
+#attractions .sectionContent {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+#attractions .attrInfo {
+  padding: 4rem;
+}
+
+#attractions .sectionContent > div {
+  display: flex;
+  border: 0.1rem solid var(--color-gray-5);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition: all 0.15s;
+  background-color: var(--color-section);
+}
+
+#attractions .sectionContent > div:hover {
+  transform: translateY(-0.8rem);
+  box-shadow: 0.3rem 0.3rem 0 0.3rem var(--color-gray-5);
+}
+
+#attractions .sectionContent > div > img {
+  width: 60rem;
+}
+
+#attr {
+  height: 50rem;
+  padding: 2rem;
+  margin: 4rem 0;
+  border-radius: 2rem;
+}
+
+#attr img {
+  width: 45rem;
+  height: 50rem;
+}
+
+/* events */
+#events .sectionContent {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2rem;
+}
+
+#events .sectionContent > div {
+  border: 0.1rem solid var(--color-gray-5);
+  overflow: hidden;
+  transition: all 0.15s;
+  border-radius: 0.5rem;
+  background-color: var(--color-section);
+}
+
+#events .sectionContent > div:hover {
+  transform: translateY(-0.8rem);
+  box-shadow: 0.3rem 0.3rem 0 0.3rem var(--color-gray-5);
+}
+
+#events .sectionContent div img {
+  width: 100%;
+  height: 30rem;
+}
+
+/* Dining places */
+#dining {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+#dining > div {
+  display: flex;
+
+  border: 0.1rem solid var(--color-gray-5);
+  border-radius: 0.5rem;
+  transition: all 0.15s;
+}
+
+#dining > div:hover {
+  transform: translateY(-0.8rem);
+  box-shadow: 0.3rem 0.3rem 0 0.3rem var(--color-gray-5);
+}
+
+#dining img {
+  width: 60rem;
+}
+
+/* Shopping places */
+#shops {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+#shops > div {
+  display: flex;
+
+  border: 0.1rem solid var(--color-gray-5);
+  border-radius: 0.5rem;
+  transition: all 0.15s;
+}
+
+#shops > div:hover {
+  transform: translateY(-0.8rem);
+  box-shadow: 0.3rem 0.3rem 0 0.3rem var(--color-gray-5);
+  background-color: var(--color-section-hover);
+}
+
+#shops img {
+  width: 60rem;
+}
+
+/* moreInfo.html ------------------------------------*/
+#ticketOptions .ticketOption {
+  transition: all 0.3s;
+}
+
+#ticketOptions > .sectionContent > :nth-child(2) {
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0.5rem 0.5rem 0 0 var(--color-gray-5);
+  transform: scale(1.02);
+}
+
+#ticketOptions > .sectionContent > :nth-child(2)::after {
+  content: "BEST";
+  border: 0.1rem solid var(--color-gray-5);
+  font-size: var(--size-m);
+  color: #fff;
+  font-weight: bold;
+  position: absolute;
+  text-align: center;
+  width: 15rem;
+  height: 2.6rem;
+  padding: 0.3rem;
+  background-color: var(--color-primary);
+  top: 0;
+  left: 0;
+  transform: rotate(-35deg) translate(-22%, -30%);
+}
+
+.ticketPrice strong {
+  font-size: var(--size-l);
+}
+
+#ticketOptions > .sectionContent > :nth-child(2) > .ticketPrice > strong {
+  font-size: var(--size-xl);
+}
+
+#ticketOptions > .sectionContent > :nth-child(2):hover {
+  box-shadow: 1rem 1rem 0 0 var(--color-gray-5);
+  transform: scale(1.05);
+}
+
+#ticketOptions .ticketOption {
+  padding: 5rem 4rem 4rem 5rem;
+}
+
+#ticketOptions .sectionHead {
+  padding-top: 5rem;
+}
+
+#ticketOptions .sectionContent {
+  display: flex;
+}
+
+#map {
+  width: 100%;
+  text-align: center;
+}
+
+#map img {
+  width: 100%;
+}
+
+#accessibility > p {
+  margin-bottom: 5rem;
+}
+
+#accessibility .sectionContent {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+#faqs > p {
+  margin-bottom: 5rem;
+}
+
+#faqs .sectionContent {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
