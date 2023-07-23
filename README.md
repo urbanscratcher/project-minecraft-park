@@ -11,7 +11,7 @@
 - 추가적으로 피그마를 통해 이를 구체화하면서 어울리는 폰트, 컬러 등을 선택해 간단한 디자인 시스템을 마련해 보았습니다. 본격적으로 피그마를 사용해 본 건 처음이었는데, 스타일을 컴포넌트 별로 일괄 적용하는 데 최적화 돼 있다는 느낌을 받았습니다.
 
 ## 개발 문서
-
+[Minecraft_WebDev_Report.pdf](https://github.com/urbanscratcher/project-minecraft-park/files/12140175/Report_fin.pdf)
 
 ## 데모 링크
 https://urbanscratcher.github.io/project-minecraft-park/
