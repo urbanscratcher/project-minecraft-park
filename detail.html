@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- import fonts-->
+    <!-- Luckiest Guy for headilines, Nunito Sans for normal text -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Questrial&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- import stylesheets -->
+    <link rel="stylesheet" href="./css/semantic_styles.css" />
+    <link rel="stylesheet" href="./css/global_styles.css" />
+    <link rel="stylesheet" href="./css/class_styles.css" />
+    <link rel="stylesheet" href="./css/id_styles.css" />
+
+    <title>Minecraft Adventure Park &mdash; Details</title>
+  </head>
+  <body>
+    <!-- HEADER: all pages include this section (always on top) -->
+    <header>
+      <!-- ALERT BAR -->
+      <div id="alert">
+        <p>Opening Hours Today &mdash; from 09:00AM to 11:00PM</p>
+        <a href="./index.html#ticketing" class="button">GET TICKETS NOW!</a>
+      </div>
+      <!-- MAIN NAVIGATION BAR -->
+      <nav id="mainNav">
+        <!-- logo -->
+        <a href="index.html">
+          <img
+            src="./img/common/logo.png"
+            alt="A logo image of Minecraft Adventure Park"
+            width="200"
+          />
+        </a>
+        <!-- menu items -->
+        <ol>
+          <li><a href="./detail.html#attractions">Attractions</a></li>
+          <li><a href="./detail.html#events">Events</a></li>
+          <li>
+            <a href="./detail.html#diningAndShopping">Shops</a>
+          </li>
+          <li><a href="./moreInfo.html#ticketOptions">Tickets</a></li>
+          <li><a href="./moreInfo.html#map">Map</a></li>
+          <li><a href="./moreInfo.html#accessibility">Accessibility</a></li>
+          <li><a href="./moreInfo.html#faqs">FAQs</a></li>
+        </ol>
+      </nav>
+    </header>
+
+    <!-- MAIN: main content for this page -->
+    <main>
+      <!-- ATTRACTIONS SECTION -->
+      <section id="attractions">
+        <!-- head -->
+        <div class="sectionHead">
+          <h2>Attractions and Rides</h2>
+        </div>
+        <div class="sectionContent">
+          <!-- attraction1 -->
+          <div id="attrCreeper">
+            <img
+              src="./img/detail/attrCreeper.jpg"
+              alt="a creeper roller coaster"
+              width="300"
+            />
+            <div class="attrInfo">
+              <h3>Creeper Coaster</h3>
+              <div class="attrOperation">
+                <p class="attrOpeningHours">
+                  <object
+                    data="./img/common/time.svg"
+                    width="24"
+                    height="24"
+                  ></object>
+                  09:00AM to 10:30PM
+                </p>
+                <p class="attrLocation">
+                  <object
+                    data="./img/common/location.svg"
+                    width="24"
+                    height="24"
+                  ></object>
+                  Adventure Alley
+                </p>
+              </div>
+              <div class="attrDescription">
+                <p>
+                  Brace yourself for a thrilling ride on the Creeper Coaster,
+                  where you'll twist and turn through Minecraft-inspired
+                  landscapes, dodging obstacles and encountering explosive
+                  surprises along the way.
+                </p>
+              </div>
+              <div class="attrLimit">
+                <p class="attrMinHeight">
+                  <object
+                    data="./img/common/height.svg"
+                    width="24"
+                    height="24"
+                  ></object
+                  >135cm+
+                </p>
+                <p class="attrMinAge">
+                  <object
+                    data="./img/common/person.svg"
+                    width="24"
+                    height="24"
+                  ></object
+                  >15+
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- attraction2 -->
+          <div id="attrRacer">
+            <img
+              src="./img/detail/attrRacer.jpg"
+              alt="three cars in the Redstone Racer track"
+              width="300"
+            />
+            <div class="attrInfo">
+              <h3>Redstone Racers</h3>
+              <div class="attrOperation">
+                <p class="attrOpeningHours">
+                  <object
+                    data="./img/common/time.svg"
+                    width="24"
+                    height="24"
+                  ></object>
+                  10:00AM to 08:00PM
+                </p>
+                <p class="attrLocation">
+                  <object
+                    data="./img/common/location.svg"
+                    width="24"
+                    height="24"
+                  ></object>
+                  Adventure Alley
+                </p>
+              </div>
+              <div class="attrDescription">
+                <p>
+                  Get ready for a high-speed race on the Redstone Racers, a
+                  track filled with twists, turns, and power-ups. Compete
+                  against your friends or other park guests as you zoom through
+                  a colorful Minecraft-inspired world, vying for victory.
+                </p>
+              </div>
+              <div class="attrLimit">
+                <p class="attrMinHeight">
+                  <object
+                    data="./img/common/height.svg"
+                    width="24"
+                    height="24"
+                  ></object
+                  >120cm+
+                </p>
+                <p class="attrMinAge">
+                  <object
+                    data="./img/common/person.svg"
+                    width="24"
+                    height="24"
+                  ></object
+                  >15+
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- attraction3 -->
+          <div id="attrEnderdragon">
+            <img
+              src="./img/detail/attrEnderdragon.jpg"
+              alt="people fighting with the Ender Dragon"
+              width="300"
+            />
+            <div class="attrInfo">
+              <h3>Ender Dragon Battlefield</h3>
+              <div class="attrOperation">
+                <p class="attrOpeningHours">
+                  <object
+                    data="./img/common/time.svg"
+                    width="24"
+                    height="24"
+                  ></object>
+                  10:00AM to 06:00PM
+                </p>
+                <p class="attrLocation">
+                  <object
+                    data="./img/common/location.svg"
+                    width="24"
+                    height="24"
+                  ></object>
+                  Legends Land
+                </p>
+              </div>
+              <div class="attrDescription">
+                <p>
+                  Feel the rush of adrenaline as you navigate through
+                  treacherous terrain, filled with towering obsidian pillars and
+                  swirling Endermen. Strategize your moves, coordinate attacks,
+                  and unleash your might against the fearsome Ender Dragon.
+                </p>
+              </div>
+              <div class="attrLimit">
+                <p class="attrMinHeight">
+                  <object
+                    data="./img/common/height.svg"
+                    width="24"
+                    height="24"
+                  ></object
+                  >120cm+
+                </p>
+                <p class="attrMinAge">
+                  <object
+                    data="./img/common/person.svg"
+                    width="24"
+                    height="24"
+                  ></object
+                  >15+
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- attraction4 -->
+          <div id="attrLabyrinth">
+            <img
+              src="./img/detail/attrLabyrinth.jpg"
+              alt="an overview of the maze showing dark and scary mood"
+              width="300"
+            />
+            <div class="attrInfo">
+              <h3>Nether Labyrinth</h3>
+              <div class="attrOperation">
+                <p class="attrOpeningHours">
+                  <object
+                    data="./img/common/time.svg"
+                    width="24"
+                    height="24"
+                  ></object>
+                  09:00AM to 10:00PM
+                </p>
+                <p class="attrLocation">
+                  <object
+                    data="./img/common/location.svg"
+                    width="24"
+                    height="24"
+                  ></object>
+                  Mystic Mountain
+                </p>
+              </div>
+              <div class="attrDescription">
+                <p>
+                  Enter the fiery and mysterious Nether Labyrinth, a
+                  walk-through attraction where you'll navigate winding
+                  corridors, encounter fearsome mobs, and solve puzzles to
+                  escape the dangerous dimension and return to the Overworld.
+                </p>
+              </div>
+              <div class="attrLimit">
+                <p class="attrMinHeight">
+                  <object
+                    data="./img/common/height.svg"
+                    width="24"
+                    height="24"
+                  ></object
+                  >Any Height
+                </p>
+                <p class="attrMinAge">
+                  <object
+                    data="./img/common/person.svg"
+                    width="24"
+                    height="24"
+                  ></object
+                  >12+
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- attraction5 -->
+          <div id="attrUnicorn">
+            <img
+              src="./img/detail/attrUnicorn.png"
+              alt="a unicorn and a man in the green field"
+              width="300"
+            />
+            <div class="attrInfo">
+              <h3>Unicorn Meadows</h3>
+              <div class="attrOperation">
+                <p class="attrOpeningHours">
+                  <object
+                    data="./img/common/time.svg"
+                    width="24"
+                    height="24"
+                  ></object>
+                  11:00AM to 06:00PM
+                </p>
+                <p class="attrLocation">
+                  <object
+                    data="./img/common/location.svg"
+                    width="24"
+                    height="24"
+                  ></object>
+                  Fairy Forest
+                </p>
+              </div>
+              <div class="attrDescription">
+                <p>
+                  Unicorn Meadows is a place where fantasies come alive and the
+                  extraordinary becomes ordinary. Let the wonder of Minecraft
+                  transport you to a realm of enchantment, where unicorns reign
+                  supreme and the possibilities are limitless.
+                </p>
+              </div>
+              <div class="attrLimit">
+                <p class="attrMinHeight">
+                  <object
+                    data="./img/common/height.svg"
+                    width="24"
+                    height="24"
+                  ></object
+                  >Any Height
+                </p>
+                <p class="attrMinAge">
+                  <object
+                    data="./img/common/person.svg"
+                    width="24"
+                    height="24"
+                  ></object
+                  >All Ages
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- attraction6 -->
+          <div id="attrRapids">
+            <img
+              src="./img/detail/attrRapids.webp"
+              alt="a nice view of waterfall rapids"
+              width="300"
+            />
+            <div class="attrInfo">
+              <h3>Waterfall Rapids</h3>
+              <div class="attrOperation">
+                <p class="attrOpeningHours">
+                  <object
+                    data="./img/common/time.svg"
+                    width="24"
+                    height="24"
+                  ></object>
+                  09:00AM to 07:00PM
+                </p>
+                <p class="attrLocation">
+                  <object
+                    data="./img/common/location.svg"
+                    width="24"
+                    height="24"
+                  ></object>
+                  Mystic Mountain
+                </p>
+              </div>
+              <div class="attrDescription">
+                <p>
+                  Dive into the adventure of a lifetime at Waterfall Rapids, an
+                  exhilarating attraction in our Minecraft theme park! Admire
+                  the intricate details of the blocky landscapes, vibrant
+                  vegetation, and playful Minecraft creatures that inhabit the
+                  surroundings.
+                </p>
+              </div>
+              <div class="attrLimit">
+                <p class="attrMinHeight">
+                  <object
+                    data="./img/common/height.svg"
+                    width="24"
+                    height="24"
+                  ></object
+                  >110cm+
+                </p>
+                <p class="attrMinAge">
+                  <object
+                    data="./img/common/person.svg"
+                    width="24"
+                    height="24"
+                  ></object
+                  >12+
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- attraction7 -->
+          <div id="attrWheel">
+            <img
+              src="./img/detail/attrWheel.webp"
+              alt="a ferri wheel with the sunset on the back"
+              width="300"
+            />
+            <div class="attrInfo">
+              <h3>Pixie Ferris Wheel</h3>
+              <div class="attrOperation">
+                <p class="attrOpeningHours">
+                  <object
+                    data="./img/common/time.svg"
+                    width="24"
+                    height="24"
+                  ></object>
+                  09:00AM to 11:00PM
+                </p>
+                <p class="attrLocation">
+                  <object
+                    data="./img/common/location.svg"
+                    width="24"
+                    height="24"
+                  ></object>
+                  Pixie Park
+                </p>
+              </div>
+              <div class="attrDescription">
+                <p>
+                  Experience the thrill of soaring through the sky as you board
+                  our intricately designed Ferris Wheel, inspired by the
+                  charming pixies of Minecraft. Each gondola is adorned with
+                  vibrant colors and delicate pixie wings, creating a truly
+                  enchanting atmosphere.
+                </p>
+              </div>
+              <div class="attrLimit">
+                <p class="attrMinHeight">
+                  <object
+                    data="./img/common/height.svg"
+                    width="24"
+                    height="24"
+                  ></object
+                  >Any Height
+                </p>
+                <p class="attrMinAge">
+                  <object
+                    data="./img/common/person.svg"
+                    width="24"
+                    height="24"
+                  ></object
+                  >All Ages
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EVENTS SECTION -->
+      <section id="events">
+        <!-- head -->
+        <div class="sectionHead">
+          <h2>Upcoming Special Events</h2>
+        </div>
+        <div class="sectionContent">
+          <!-- event1 -->
+          <div id="evMining">
+            <img
+              src="./img/detail/evMining.png"
+              alt="a miner holding a pixel pick"
+              width="300"
+            />
+            <div class="evInfo">
+              <h3>Mining Madness</h3>
+              <div class="evOperation">
+                <p class="evOpeningHours">
+                  <object
+                    data="./img/common/time.svg"
+                    width="24"
+                    height="24"
+                  ></object>
+                  5/27 12:00PM to 02:00PM
+                </p>
+                <p class="evLocation">
+                  <object
+                    data="./img/common/location.svg"
+                    width="24"
+                    height="24"
+                  ></object>
+                  Mystic Mountain
+                </p>
+              </div>
+              <div class="evDescription">
+                <p>
+                  Become a virtual miner and embark on a quest to collect
+                  precious resources hidden throughout the park.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- event2 -->
+          <div id="evTnt">
+            <img src="./img/detail/evTnt.webp" alt="tnt bombs" width="300" />
+            <div class="evInfo">
+              <h3>TNT Blast Challenge</h3>
+              <div class="evOperation">
+                <p class="evOpeningHours">
+                  <object
+                    data="./img/common/time.svg"
+                    width="24"
+                    height="24"
+                  ></object>
+                  6/3 07:00PM to 08:30PM
+                </p>
+                <p class="evLocation">
+                  <object
+                    data="./img/common/location.svg"
+                    width="24"
+                    height="24"
+                  ></object>
+                  Pixie Park
+                </p>
+              </div>
+              <div class="evDescription">
+                <p>
+                  Are you ready for explosive fun? It's a blast of excitement
+                  that will keep you on your toes!
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- event3 -->
+          <div id="evCrafting">
+            <img
+              src="./img/detail/evCrafting.jpg"
+              alt="a crafting room"
+              width="300"
+            />
+            <div class="evInfo">
+              <h3>Crafting Workshops</h3>
+              <div class="evOperation">
+                <p class="evOpeningHours">
+                  <object
+                    data="./img/common/time.svg"
+                    width="24"
+                    height="24"
+                  ></object>
+                  6/15 14:00PM to 16:30PM
+                </p>
+                <p class="evLocation">
+                  <object
+                    data="./img/common/location.svg"
+                    width="24"
+                    height="24"
+                  ></object>
+                  Pixie Park
+                </p>
+              </div>
+              <div class="evDescription">
+                <p>
+                  Immerse yourself in the art of Minecraft crafting with our
+                  engaging workshops led by expert builders.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- event4 -->
+          <div id="evBoss">
+            <img
+              src="./img/detail/evBoss.jpg"
+              alt="a man fighting with a boss"
+              width="300"
+            />
+            <div class="evInfo">
+              <h3>Epic Boss Battles</h3>
+              <div class="evOperation">
+                <p class="evOpeningHours">
+                  <object
+                    data="./img/common/time.svg"
+                    width="24"
+                    height="24"
+                  ></object>
+                  7/13 11:00AM to 13:30PM
+                </p>
+                <p class="evLocation">
+                  <object
+                    data="./img/common/location.svg"
+                    width="24"
+                    height="24"
+                  ></object>
+                  Mystic Mountain
+                </p>
+              </div>
+              <div class="evDescription">
+                <p>
+                  Prepare for epic showdowns as you face off against fearsome
+                  Minecraft bosses in thrilling virtual battles. Team up with
+                  friends or join forces with other park visitors to take on
+                  these formidable foes
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- event5 -->
+          <div id="evBlock">
+            <img
+              src="./img/detail/evBlock.webp"
+              alt="block building preparation"
+              width="300"
+            />
+            <div class="evInfo">
+              <h3>Block-Building Bonanza</h3>
+              <div class="evOperation">
+                <p class="evOpeningHours">
+                  <object
+                    data="./img/common/time.svg"
+                    width="24"
+                    height="24"
+                  ></object>
+                  7/28 All day
+                </p>
+                <p class="evLocation">
+                  <object
+                    data="./img/common/location.svg"
+                    width="24"
+                    height="24"
+                  ></object>
+                  Fairy Forest
+                </p>
+              </div>
+              <div class="evDescription">
+                <p>
+                  Compete against fellow visitors in timed challenges,
+                  constructing impressive structures using nothing but your
+                  creativity and a vast array of virtual blocks. Show off your
+                  skills and witness the awe-inspiring creations of other
+                  participants
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- DINING AND SHOPPING SECTION -->
+      <section id="diningAndShopping">
+        <div class="sectionHead">
+          <h2>Dining and Shopping</h2>
+        </div>
+        <!-- Dining Places -->
+        <div id="dining">
+          <h3>Dining Places</h3>
+          <!-- dining1 -->
+          <div id="diningSandwich">
+            <img
+              src="./img/detail/diningSandwich.webp"
+              alt="a sandwich shop"
+              width="300"
+            />
+            <div class="diningInfo">
+              <h4>Sandwich Bar</h4>
+              <div class="diningOperation">
+                <p class="diningOpeningHours">
+                  <object
+                    data="./img/common/time.svg"
+                    width="24"
+                    height="24"
+                  ></object
+                  >Mon-Sat 10:00AM to 14:00PM
+                </p>
+                <p class="diningLocation">
+                  <object
+                    data="./img/common/location.svg"
+                    width="24"
+                    height="24"
+                  ></object>
+                  Pixie Park
+                </p>
+                <p class="diningContact">
+                  <object
+                    data="./img/common/phone.svg"
+                    width="24"
+                    height="24"
+                  ></object
+                  >055 111 1111
+                </p>
+              </div>
+              <div class="diningDescription">
+                <p>
+                  Experience the artistry of our sandwich creations as our
+                  skilled chefs combine the freshest ingredients, premium meats,
+                  and locally sourced produce.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- dining2 -->
+          <div id="diningForest">
+            <img
+              src="./img/detail/diningForest.webp"
+              alt="a vegan place decorated with plants"
+              width="300"
+            />
+            <div class="diningInfo">
+              <h4>Forest Lounge</h4>
+              <div class="diningOperation">
+                <p class="diningOpeningHours">
+                  <object
+                    data="./img/common/time.svg"
+                    width="24"
+                    height="24"
+                  ></object
+                  >Mon-Sat 10:00AM to 14:00PM
+                </p>
+                <p class="diningLocation">
+                  <object
+                    data="./img/common/location.svg"
+                    width="24"
+                    height="24"
+                  ></object
+                  >Fairy Forest
+                </p>
+                <p class="diningContact">
+                  <object
+                    data="./img/common/phone.svg"
+                    width="24"
+                    height="24"
+                  ></object
+                  >055 111 2222
+                </p>
+              </div>
+              <div class="diningDescription">
+                <p>
+                  Discover a place where ethical dining meets natural serenity.
+                  Visit the Forest Lounge and let us redefine your perception of
+                  vegan cuisine, one delectable dish at a time.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Shopping Places -->
+        <div id="shops">
+          <h3>Shopping Places</h3>
+          <!-- shop1 -->
+          <div id="shopGift">
+            <img src="./img/detail/shopGift.jpg" alt="a giftshop" width="300" />
+            <div class="shopInfo">
+              <h4>Pixel Giftshop</h4>
+              <div class="shopOperation">
+                <p class="shopOpeningHours">
+                  <object
+                    data="./img/common/time.svg"
+                    width="24"
+                    height="24"
+                  ></object
+                  >Mon-Sat 10:00AM to 19:00PM
+                </p>
+                <p class="shopLocation">
+                  <object
+                    data="./img/common/location.svg"
+                    width="24"
+                    height="24"
+                  ></object
+                  >Pixie Park
+                </p>
+                <p class="shopContact">
+                  <object
+                    data="./img/common/phone.svg"
+                    width="24"
+                    height="24"
+                  ></object
+                  >055 111 3333
+                </p>
+              </div>
+              <div class="shopDescription">
+                <p>
+                  Unleash your creativity and find clothing that lets you
+                  express your love for Minecraft in a fashionable way.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- shop2 -->
+          <div id="shopCouture">
+            <img
+              src="./img/detail/shopCouture.jpg"
+              alt="a giftshop"
+              width="300"
+            />
+            <div class="shopInfo">
+              <h4>Block Couture</h4>
+              <div class="shopOperation">
+                <p class="shopOpeningHours">
+                  <object
+                    data="./img/common/time.svg"
+                    width="24"
+                    height="24"
+                  ></object
+                  >Mon-Sat 10:00AM to 19:00PM
+                </p>
+                <p class="shopLocation">
+                  <object
+                    data="./img/common/location.svg"
+                    width="24"
+                    height="24"
+                  ></object>
+                  Pixie Park
+                </p>
+                <p class="shopContact">
+                  <object
+                    data="./img/common/phone.svg"
+                    width="24"
+                    height="24"
+                  ></object
+                  >055 111 3333
+                </p>
+              </div>
+              <div class="shopDescription">
+                <p>
+                  From t-shirts adorned with iconic Minecraft characters to
+                  stylish hoodies featuring block patterns, you'll find the
+                  perfect attire to showcase your Minecraft passion
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER: all pages include this section -->
+    <footer>
+      <!-- footer logo -->
+      <div id="footerLogo">
+        <a href="./index.html">
+          <img src="./img/common/logo.png" alt="logo" width="120" />
+        </a>
+      </div>
+
+      <!-- sitemap -->
+      <div id="sitemap">
+        <h3>Sitemap</h3>
+        <ol>
+          <li><a href="./detail.html#attractions">Attractions and Rides</a></li>
+          <li><a href="./detail.html#events">Upcoming Special Events</a></li>
+          <li>
+            <a href="./detail.html#diningAndShopping">Dining and Shopping</a>
+          </li>
+          <li><a href="./index.html#ticketing">Get Your Tickets</a></li>
+          <li><a href="./moreInfo.html#ticketOptions">Ticket Options</a></li>
+          <li><a href="./moreInfo.html#map">Park Map</a></li>
+          <li>
+            <a href="./moreInfo.html#accessibility"
+              >Accessibility Information</a
+            >
+          </li>
+          <li><a href="./moreInfo.html#faqs">FAQs</a></li>
+        </ol>
+      </div>
+
+      <!-- Contact Us -->
+      <div id="contactUs">
+        <h3>Contact Us</h3>
+        <!-- via phone -->
+        <div id="contactPhone">
+          <h4>Call Center</h4>
+          <ul id="callCenterInfo">
+            <li><strong>055 465 4557</strong></li>
+            <li>
+              <p><b>Mon to Fri</b> &mdash; 9AM to 6PM CST</p>
+            </li>
+            <li>
+              <p><b>Sat</b> &mdash; 9AM to 5PM CST</p>
+            </li>
+            <li>
+              <p><b>Sun</b> &mdash; 9AM to 4PM CST</p>
+            </li>
+          </ul>
+        </div>
+        <!-- via email -->
+        <div id="contactEmail">
+          <h4>24/7 Support</h4>
+          <ul id="emailInfo">
+            <li><strong>support@minecraft.park</strong></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Newsletter -->
+      <div id="newsletter">
+        <h3>Newsletter</h3>
+        <p>Don't miss our good deals and latest news!</p>
+        <!-- subscription form -->
+        <form id="newsletterForm">
+          <input type="email" placeholder="Email address" />
+          <a role="button" href="./subscribed.html" class="button">Subscribe</a>
+        </form>
+        <!-- policy description -->
+        <p id="newsletterPolicy">
+          <small>
+            To find out more about how Minecraft Park uses and protects your
+            personal data, click
+            <strong><a href="#" class="text-link">here</a></strong
+            >. You can unsubscribe free of charge and at any time.
+          </small>
+        </p>
+      </div>
+
+      <!-- Follow Us -->
+      <div id="followUs">
+        <h3>Follow Us</h3>
+        <!-- social network links -->
+        <ul id="socialNetworkLinks">
+          <li id="twitter">
+            <a href="#"
+              ><svg
+                width="24"
+                height="24"
+                viewBox="0 0 192 192"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+              >
+                <path
+                  stroke="#000000"
+                  stroke-linejoin="round"
+                  stroke-width="12"
+                  d="M126 38c-14.359 0-26 11.64-26 26a25.89 25.89 0 0 0 2.929 12C72 76 56 70 30 46c0 39.5 10 66 34 81-8 11.2-29.333 14.333-42 14.5 0 0 14 13.5 46 13.5 56 0 84-46.783 84-91l18-20h-27.386A25.892 25.892 0 0 0 126 38Z"
+                /></svg
+            ></a>
+          </li>
+          <li id="facebook">
+            <a href="#">
+              <svg
+                fill="#000000"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 2.03998C6.5 2.03998 2 6.52998 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.84998C10.44 7.33998 11.93 5.95998 14.22 5.95998C15.31 5.95998 16.45 6.14998 16.45 6.14998V8.61998H15.19C13.95 8.61998 13.56 9.38998 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96C15.9164 21.5878 18.0622 20.3855 19.6099 18.57C21.1576 16.7546 22.0054 14.4456 22 12.06C22 6.52998 17.5 2.03998 12 2.03998Z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li id="instagram">
+            <a href="#"
+              ><svg
+                width="24"
+                height="24"
+                viewBox="0 0 192 192"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+              >
+                <path
+                  stroke="#000000"
+                  stroke-width="12"
+                  d="M96 162c-14.152 0-24.336-.007-32.276-.777-7.849-.761-12.87-2.223-16.877-4.741a36 36 0 0 1-11.33-11.329c-2.517-4.007-3.98-9.028-4.74-16.877C30.007 120.336 30 110.152 30 96c0-14.152.007-24.336.777-32.276.76-7.849 2.223-12.87 4.74-16.877a36 36 0 0 1 11.33-11.33c4.007-2.517 9.028-3.98 16.877-4.74C71.663 30.007 81.847 30 96 30c14.152 0 24.336.007 32.276.777 7.849.76 12.87 2.223 16.877 4.74a36 36 0 0 1 11.329 11.33c2.518 4.007 3.98 9.028 4.741 16.877.77 7.94.777 18.124.777 32.276 0 14.152-.007 24.336-.777 32.276-.761 7.849-2.223 12.87-4.741 16.877a36 36 0 0 1-11.329 11.329c-4.007 2.518-9.028 3.98-16.877 4.741-7.94.77-18.124.777-32.276.777Z"
+                />
+                <circle
+                  cx="96"
+                  cy="96"
+                  r="30"
+                  stroke="#000000"
+                  stroke-width="12"
+                />
+                <circle cx="135" cy="57" r="9" fill="#000000" /></svg
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <!--
+      Move To the Top
+      Add date on 6/23/2023 by Atsuya
+      Edited date on 6/25/2023 by Joun
+    -->
+    <a href="#" class="top">Top &#8593;</a>
+  </body>
+</html>
