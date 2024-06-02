@@ -1,33 +1,72 @@
+# Minecraft Adventure Park
 
-# Minecraft Theme Park Website
-- A static 3-page website created for a web development assignment
-- Focused more on the development process rather than implementation, from requirement extraction, wireframing, site design to CSS and HTML coding
+May - July 2023
 
-## Development Document
-[Minecraft_WebDev_Report.pdf](https://github.com/urbanscratcher/project-minecraft-park/files/12140175/Report_fin.pdf)
+A static website project for a fictional theme park, created as an assignment for a web development team. The focus of the project is on extracting requirements, wireframing, and designing the site from scratch using CSS and HTML, rather than on functionality implementation.
 
-## Link
-https://urbanscratcher.github.io/project-minecraft-park/
+## Features
 
-## Figma Link
-https://www.figma.com/file/57ja6lGIQIJfmunKP6jjrb/%5BProject%5D-Minecraft-Theme-Park?type=design&node-id=0%3A1&mode=design&t=iPYF2Hl1DAtTBa92-1
+- **Communication Focus**: This project centered around targeting specific visitors and determining how to group and place information effectively to communicate with them.
+- **Placement of Important Information**: Information is prioritized and prominently displayed at the top of the main page.
+- **Page-specific Information Segregation**:
+  - **Main Page**: Provides key information.
+  - **Detailed Service Page**: Offers detailed information on attractions and services.
+  - **Customer Support Page**: Includes ticket information, park maps, accessibility information, and FAQs.
+- **Sitemap**: A sitemap and contact information are placed at the bottom of every page.
 
-## Libraries & Technologies
-- Implementation: HTML, CSS
-- Design: MS Powerpoint (wireframing), Figma
-- Communication Tools: Slack
+## Technical Focus
+
+- This project is crafted using pure CSS and HTML without JavaScript, focusing on the theme park concept.
+- During the design phase, the primary purposes of the site (online ticketing, attraction information, visual branding, advertising, customer support) were defined, and the target audience was identified.
+- An analysis of five similar websites was conducted to identify common information and their pros and cons, which were then incorporated into the design.
+- Decisions on page division and information placement were made, followed by wireframing.
+- Wireframes were refined using MS PowerPoint and Figma, selecting appropriate fonts and colors to create a simple design system.
+
+## Demo
+
+[Visit the Site](https://urbanscratcher.github.io/project-minecraft-park/)
+[Final Report (ENG).pdf](https://github.com/urbanscratcher/project-minecraft-park/files/12140175/Report_fin.pdf)
+
+## Tech Stack
+
+### Frontend
+
+- HTML, CSS
+
+### Backend
+
+- None
+
+### Database
+
+- None
+
+### Development Environment
+
+- **Source Code**: Managed manually
+
+### Cloud Services and Deployment
+
+- **Hosting and Deployment**: GitHub Pages
+
+### Design
+
+- MS PowerPoint (wireframing), Figma
+
+### Communication Tools
+
+- Slack
+
+## Design Process
+
+[Figma Link](https://www.figma.com/file/57ja6lGIQIJfmunKP6jjrb/%5BProject%5D-Minecraft-Theme-Park?type=design&node-id=0%3A1&mode=design&t=iPYF2Hl1DAtTBa92-1)
+
+---
 
 ## Development Notes
-- This assignment, themed around 'theme park', was written using pure CSS and HTML without JavaScript.
-- During the planning phase, the primary purposes of the site (online ticketing, ride information, visual branding, advertising, customer support) were defined, and the main target audience was identified.
-- Investigated five similar websites to analyze commonly included information and their pros and cons, which were reflected in the design.
-- Based on this, decided how to divide the pages and what information to place, and created wireframes.
-- As wireframes were materialized through Figma, suitable fonts, colors, etc., were selected to implement a simple design system.
-  - This was the first time using Figma extensively, and it felt optimized for applying styles uniformly across components.
-- ChatGPT was immensely helpful in developing fake content.
 
-## Personal Contribution
-Over 95%
-- Although it was a project for four people, due to circumstances, I handled everything from ideas, documentation, Figma design, to implementation.
-- This was mainly because coordinating through Slack alone was difficult, and it was hard to gather everyone due to different time zones.
-- Two members actively participated and reviewed, but since I had high expectations for the outcome, I considered it a solo project (which was actually favorable).
+- This was my first extensive use of Figma, and I found it optimized for applying styles uniformly across components.
+- ChatGPT was immensely helpful in developing virtual content.
+- Although it was a four-person project, I handled the ideation, documentation, Figma design, and implementation due to circumstances.
+- Communicating solely via Slack was challenging, especially with different time zones, making it hard to coordinate meetings.
+- Despite some review from two team members, I primarily treated this as a solo project due to my high standards for the final product.
