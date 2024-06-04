@@ -53,6 +53,18 @@ The project focused on the planning and development process, from requirements g
 
 ## Design Process
 
+1. Organize the planning document clearly.
+<video src="https://github.com/urbanscratcher/project-minecraft-park/assets/17016494/1789a334-b979-4512-acb3-885096226943" controls ></video>
+
+2. Create wireframes.
+<video src="https://github.com/urbanscratcher/project-minecraft-park/assets/17016494/6bba89e6-271f-43d5-9be8-1b56aafe01ad" controls ></video>
+
+3. Select typography and colors that match the site.
+<video src="https://github.com/urbanscratcher/project-minecraft-park/assets/17016494/aef78011-5fe5-4b90-b280-24b454958b8b" controls ></video>
+
+4. Create mockups.
+<video src="https://github.com/urbanscratcher/project-minecraft-park/assets/17016494/d31b71c2-fa81-4177-9eb7-e236016a10f7" controls ></video>
+
 [Visit the Figma File](https://www.figma.com/file/57ja6lGIQIJfmunKP6jjrb/%5BProject%5D-Minecraft-Theme-Park?type=design&node-id=0%3A1&mode=design&t=iPYF2Hl1DAtTBa92-1)
 
 ---
