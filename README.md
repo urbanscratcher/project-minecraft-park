@@ -24,7 +24,7 @@ The project focused on the planning and development process, from requirements g
 
 ## Demo
 
-<video src="https://file.notion.so/f/f/948c4e5b-3d9c-4aaf-a479-ce4f43da36bb/8f025265-8569-43da-9578-4894ad436e1a/minecraft-demo.webm?id=8dd904ba-7d8d-49a1-8316-69a331528aa0&table=block&spaceId=948c4e5b-3d9c-4aaf-a479-ce4f43da36bb&expirationTimestamp=1717632000000&signature=NUJ-xdwO5b51rvoxL1jOUWRcp0ird6MT0dZr9QGCEIk&downloadName=minecraft-demo.webm" controls ></video>
+<video src="https://github.com/urbanscratcher/project-minecraft-park/assets/17016494/39cbbdab-7c8c-4bc8-a1d0-14bf72e38e6b" controls ></video>
 
 (Visit the Site)[https://urbanscratcher.github.io/project-minecraft-park/]
 (Final Report(ENG).pdf)[https://github.com/urbanscratcher/project-minecraft-park/files/12140175/Report_fin.pdf]
