@@ -24,8 +24,8 @@
 
 ## 시연
 
-[사이트 바로가기](https://urbanscratcher.github.io/project-minecraft-park/){:target="\_blank"}
-[최종 리포트(ENG).pdf](https://github.com/urbanscratcher/project-minecraft-park/files/12140175/Report_fin.pdf){:target="\_blank"}
+<a href="https://urbanscratcher.github.io/project-minecraft-park/" targe="_blank" >사이트 바로가기</a>
+<a href="https://github.com/urbanscratcher/project-minecraft-park/files/12140175/Report_fin.pdf" targe="_blank" >최종 리포트(ENG).pdf</a>
 
 ## 기술 구성
 
