@@ -26,8 +26,8 @@
 
 <video src="https://file.notion.so/f/f/948c4e5b-3d9c-4aaf-a479-ce4f43da36bb/8f025265-8569-43da-9578-4894ad436e1a/minecraft-demo.webm?id=8dd904ba-7d8d-49a1-8316-69a331528aa0&table=block&spaceId=948c4e5b-3d9c-4aaf-a479-ce4f43da36bb&expirationTimestamp=1717632000000&signature=NUJ-xdwO5b51rvoxL1jOUWRcp0ird6MT0dZr9QGCEIk&downloadName=minecraft-demo.webm" controls ></video>
 
-- <a href="https://urbanscratcher.github.io/project-minecraft-park/" targe="_blank" >사이트 바로가기</a>
-- <a href="https://github.com/urbanscratcher/project-minecraft-park/files/12140175/Report_fin.pdf" targe="_blank" >최종 리포트(ENG).pdf</a>
+[사이트 바로가기](https://urbanscratcher.github.io/project-minecraft-park/)
+[최종 리포트(ENG).pdf](https://github.com/urbanscratcher/project-minecraft-park/files/12140175/Report_fin.pdf)
 
 ## 기술 구성
 
@@ -51,7 +51,7 @@
 
 ## 디자인 과정
 
-- <a href="https://www.figma.com/file/57ja6lGIQIJfmunKP6jjrb/%5BProject%5D-Minecraft-Theme-Park?type=design&node-id=0%3A1&mode=design&t=iPYF2Hl1DAtTBa92-1" targe="_blank" >피그마 바로가기</a>
+[피그마 바로가기](https://www.figma.com/file/57ja6lGIQIJfmunKP6jjrb/%5BProject%5D-Minecraft-Theme-Park?type=design&node-id=0%3A1&mode=design&t=iPYF2Hl1DAtTBa92-1)
 
 ---
 
