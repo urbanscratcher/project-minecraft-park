@@ -26,8 +26,10 @@ The project focused on the planning and development process, from requirements g
 
 <video src="https://github.com/urbanscratcher/project-minecraft-park/assets/17016494/39cbbdab-7c8c-4bc8-a1d0-14bf72e38e6b" controls ></video>
 
+
 (Visit the Site)[https://urbanscratcher.github.io/project-minecraft-park/]
 (Final Report(ENG).pdf)[https://github.com/urbanscratcher/project-minecraft-park/files/12140175/Report_fin.pdf]
+
 
 ## Tech Stack
 
