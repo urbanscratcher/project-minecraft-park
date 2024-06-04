@@ -2,17 +2,17 @@
 
 May - July 2023
 
-A static website project for a fictional theme park, created as an assignment for a web development team. The focus of the project is on extracting requirements, wireframing, and designing the site from scratch using CSS and HTML, rather than on functionality implementation.
+The project focused on the planning and development process, from requirements gathering and wireframing to site design and CSS/HTML implementation. It emphasized user experience by efficiently organizing information based on importance and providing specific details on each page.
 
 ## Features
 
-- **Communication Focus**: This project centered around targeting specific visitors and determining how to group and place information effectively to communicate with them.
-- **Placement of Important Information**: Information is prioritized and prominently displayed at the top of the main page.
-- **Page-specific Information Segregation**:
+- **Effective Communication**: The project emphasized identifying target audiences and tailoring information accordingly.
+- **Importance-based Placement**: Information was organized based on its perceived importance.
+- **Page-specific Information Segregation**
   - **Main Page**: Provides key information.
   - **Detailed Service Page**: Offers detailed information on attractions and services.
   - **Customer Support Page**: Includes ticket information, park maps, accessibility information, and FAQs.
-- **Sitemap**: A sitemap and contact information are placed at the bottom of every page.
+- **Sitemap**: A sitemap with contact information was placed at the bottom of each page for easy navigation.
 
 ## Technical Focus
 
@@ -24,8 +24,10 @@ A static website project for a fictional theme park, created as an assignment fo
 
 ## Demo
 
-[Visit the Site](https://urbanscratcher.github.io/project-minecraft-park/)
-[Final Report (ENG).pdf](https://github.com/urbanscratcher/project-minecraft-park/files/12140175/Report_fin.pdf)
+<video src="https://file.notion.so/f/f/948c4e5b-3d9c-4aaf-a479-ce4f43da36bb/8f025265-8569-43da-9578-4894ad436e1a/minecraft-demo.webm?id=8dd904ba-7d8d-49a1-8316-69a331528aa0&table=block&spaceId=948c4e5b-3d9c-4aaf-a479-ce4f43da36bb&expirationTimestamp=1717632000000&signature=NUJ-xdwO5b51rvoxL1jOUWRcp0ird6MT0dZr9QGCEIk&downloadName=minecraft-demo.webm" controls ></video>
+
+- <a href="https://urbanscratcher.github.io/project-minecraft-park/" targe="_blank" >Visit the Site</a>
+- <a href="https://github.com/urbanscratcher/project-minecraft-park/files/12140175/Report_fin.pdf" targe="_blank" >Final Report(ENG).pdf</a>
 
 ## Tech Stack
 
@@ -37,33 +39,23 @@ A static website project for a fictional theme park, created as an assignment fo
 
 - None
 
-### Database
-
-- None
-
 ### Development Environment
 
 - **Source Code**: Managed manually
+- **Design**: MS Powerpoint for wireframing, Figma
+- **Communication**: Slack
 
 ### Cloud Services and Deployment
 
 - **Hosting and Deployment**: GitHub Pages
 
-### Design
-
-- MS PowerPoint (wireframing), Figma
-
-### Communication Tools
-
-- Slack
-
 ## Design Process
 
-[Figma Link](https://www.figma.com/file/57ja6lGIQIJfmunKP6jjrb/%5BProject%5D-Minecraft-Theme-Park?type=design&node-id=0%3A1&mode=design&t=iPYF2Hl1DAtTBa92-1)
+- <a href="https://www.figma.com/file/57ja6lGIQIJfmunKP6jjrb/%5BProject%5D-Minecraft-Theme-Park?type=design&node-id=0%3A1&mode=design&t=iPYF2Hl1DAtTBa92-1" targe="_blank" >Figma Link</a>
 
 ---
 
-## Development Notes
+## Reflection
 
 - This was my first extensive use of Figma, and I found it optimized for applying styles uniformly across components.
 - ChatGPT was immensely helpful in developing virtual content.
