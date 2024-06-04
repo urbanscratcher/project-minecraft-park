@@ -55,7 +55,7 @@
 <video src="https://github.com/urbanscratcher/project-minecraft-park/assets/17016494/1789a334-b979-4512-acb3-885096226943" controls ></video>
 
 2. 와이어프레임을 그립니다.
-<video src="https://github.com/urbanscratcher/project-minecraft-park/assets/17016494/aef78011-5fe5-4b90-b280-24b454958b8b" controls ></video>
+<video src="https://github.com/urbanscratcher/project-minecraft-park/assets/17016494/6bba89e6-271f-43d5-9be8-1b56aafe01ad" controls ></video>
 
 3. 사이트에 어울리는 타이포그래피와 컬러를 정합니다.
 <video src="https://github.com/urbanscratcher/project-minecraft-park/assets/17016494/aef78011-5fe5-4b90-b280-24b454958b8b" controls ></video>
