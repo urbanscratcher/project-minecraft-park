@@ -16,7 +16,7 @@
 
 ## 기술적 중점 사항
 
-- '테마 파크'를 소재로 `JavaScript`를 사용하지 않고 순수 `CSS`와 `HTML`을 이용해 작성한 과제입니다.
+- 테마 파크를 소재로 JavaScript를 사용하지 않고 순수 CSS와 HTML을 이용해 작성한 과제입니다.
 - 설계 단계에서는 먼저 사이트의 주요 목적(온라인 티케팅, 놀이기구 정보 제공, 시각적 브랜딩, 광고, 고객 지원)을 정의하고, 주요 타깃을 설정했습니다.
 - 5가지의 동종 웹사이트를 조사해 공통적으로 들어가는 정보와 장단점을 분석해 디자인에 반영했습니다.
 - 이에 따라 페이지를 어떻게 나눌지, 어떤 정보를 배치시킬지를 결정했고, 와이어프레임을 작성했습니다.
@@ -51,6 +51,17 @@
 - **호스팅 및 배포**: GitHub Pages
 
 ## 디자인 과정
+1. 기획 문서를 일목요연하게 정리합니다.
+<video src="https://github.com/urbanscratcher/project-minecraft-park/assets/17016494/1789a334-b979-4512-acb3-885096226943" controls ></video>
+
+2. 와이어프레임을 그립니다.
+<video src="https://github.com/urbanscratcher/project-minecraft-park/assets/17016494/aef78011-5fe5-4b90-b280-24b454958b8b" controls ></video>
+
+3. 사이트에 어울리는 타이포그래피와 컬러를 정합니다.
+<video src="https://github.com/urbanscratcher/project-minecraft-park/assets/17016494/aef78011-5fe5-4b90-b280-24b454958b8b" controls ></video>
+
+4. 목업을 그립니다.
+<video src="https://github.com/urbanscratcher/project-minecraft-park/assets/17016494/d31b71c2-fa81-4177-9eb7-e236016a10f7" controls ></video>
 
 [피그마 바로가기](https://www.figma.com/file/57ja6lGIQIJfmunKP6jjrb/%5BProject%5D-Minecraft-Theme-Park?type=design&node-id=0%3A1&mode=design&t=iPYF2Hl1DAtTBa92-1)
 
